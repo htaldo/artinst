@@ -27,6 +27,8 @@ artix-chroot /mnt
 ln -sf /usr/share/zoneinfo/America/Mexico_City /etc/localtime
 hwclock --systohc
 pacman -S vim doas
+cp configs/doas.conf /etc/doas.conf
+
 sed -i '/es_MX\.UTF-8/s/^#//' /etc/locale.gen
 locale-gen
 echo "LANG=es_MX.UTF-8" >> /etc/locale.conf
@@ -39,9 +41,9 @@ passwd
 useradd -m $user
 passwd $user
 usermod -aG wheel,audio,video,input,power,optical,storage,lp,scanner,dbus,adbusers,uucp,vboxusers $user
-doas cp configs/doas.conf /etc/doas.conf
 
-echo "[extra]
+
+doas echo "[extra]
 Include = /etc/pacman.d/mirrorlist-arch
 
 [community]
