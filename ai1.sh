@@ -2,14 +2,12 @@
 
 echo "STAGE 1: BASE"
 
+#RUN loadkeys latam
 #RUN fdisk -l
 
 device=$1
 hostname=$2
 user=$3
-
-
-timedatectl set-ntp true
 
 fdisk $device
 #config partitioning
@@ -20,7 +18,7 @@ swapon "$device"2
 mkfs.ext4 "device"3
 
 mount "$device"3 /mnt
-pacstrap /mnt base linux-lts linux-firmware
+basestrap /mnt base base-devel runit elogind-runit linux-lts linux-firmware
 fstabgen -U /mnt >> /mnt/etc/fstab
 artix-chroot /mnt
 
@@ -62,8 +60,8 @@ sv up iwd-runit
 doas pacman -S grub efibootmgr dosfstools os-prober mtools 
 #TODO: ver si se puede instalar todo solo con wifi
 
-mount /dev/sda1 /boot/EFI
-mkdir /boot/efi
+mkdir /boot/EFI
+mount $device"1" /boot/EFI
 grub-install $device --target=x86_64-efi --efi-directory=/boot/EFI --bootloader-id=grub_uefi --recheck --removable
 grub-mkconfig -o /boot/grub/grub.cfg 
 
