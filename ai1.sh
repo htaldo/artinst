@@ -8,7 +8,7 @@ device=$1
 hostname=$2
 user=$3
 
-loadkeys la-latam1
+
 timedatectl set-ntp true
 
 fdisk $device
