@@ -1,4 +1,4 @@
-#°/bin/bash
+#!/bin/bash
 
 echo "STAGE 1: BASE"
 
