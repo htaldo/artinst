@@ -1,0 +1,5 @@
+/gray1/s/#[[:xdigit:]]*/#101010/
+/gray2/s/#[[:xdigit:]]*/#101010/
+/gray3/s/#[[:xdigit:]]*/#c0c0c0/
+/gray4/s/#[[:xdigit:]]*/#c0c0c0/
+/cyan/s/#[[:xdigit:]]*/#101010/

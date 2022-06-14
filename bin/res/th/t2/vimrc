@@ -1,0 +1,12 @@
+/Comment/s/=.*/=White/
+/String/s/=.*/=Green/
+/Statement/s/=.*/=Magenta/
+/Conditional/s/=.*/=Magenta/
+/Normal/s/=.*/=Blue/
+/Cursor/s/=.*/=Blue/
+/NonText/s/=.*/=Cyan/
+/Special/s/=.*/=Magenta/
+/Type/s/=.*/=Red/
+/PreProc/s/=.*/=Green/
+/Function/s/=.*/=Green/
+/LineNr/s/=.*/=Yellow/

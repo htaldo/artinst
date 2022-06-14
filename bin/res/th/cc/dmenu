@@ -1,0 +1,6 @@
+/SchemeNorm/s/#[[:xdigit:]]*/#d9e0ee/
+/SchemeNorm/s/#[[:xdigit:]]*/#1e1e2e/2
+/SchemeSel/s/#[[:xdigit:]]*/#1e1e2e/
+/SchemeSel/s/#[[:xdigit:]]*/#ddb6f2/2
+/SchemeOut/s/#[[:xdigit:]]*/#1e1e2e/
+/SchemeOut/s/#[[:xdigit:]]*/#ddb6f2/2
