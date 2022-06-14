@@ -51,7 +51,7 @@ Include = /etc/pacman.d/mirrorlist-arch
 
 [multilib]
 Include = /etc/pacman.d/mirrorlist-arch" >> /etc/pacman.conf
-pacman-key --populate archlinux
+doas pacman-key --populate archlinux
 doas pacman -Sy
 
 doas pacman -S artix-archlinux-support
