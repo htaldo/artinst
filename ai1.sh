@@ -39,7 +39,7 @@ passwd
 useradd -m $user
 passwd $user
 usermod -aG wheel,audio,video,input,power,optical,storage,lp,scanner,dbus,adbusers,uucp,vboxusers $user
-doas cp res/configs/doas.conf /etc/doas.conf
+doas cp configs/doas.conf /etc/doas.conf
 
 echo "[extra]
 Include = /etc/pacman.d/mirrorlist-arch
