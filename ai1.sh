@@ -27,6 +27,7 @@ mount "$device"3 /mnt
 basestrap /mnt base base-devel runit elogind-runit linux-lts linux-firmware
 fstabgen -U /mnt >> /mnt/etc/fstab
 artix-chroot /mnt
+#INSTALL STOPS HERE. KEEP RUNNING SCRIPT IN CHROOT
 
 ln -sf /usr/share/zoneinfo/America/Mexico_City /etc/localtime
 hwclock --systohc
