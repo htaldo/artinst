@@ -40,4 +40,5 @@ usermod -aG wheel,audio,video,input,power,optical,storage,lp,scanner,dbus,uucp $
 #TODO: ver si se puede instalar todo solo con wifi
 exit
 umount -R /mnt
+cp -r /root/artinst /mnt/home/$user/artinst
 reboot
