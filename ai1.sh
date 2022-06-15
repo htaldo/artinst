@@ -17,7 +17,7 @@ echo "STAGE 1: BASE"
 
 fdisk $device
 #config partitioning
-pacman -S dosfstools
+###pacman -S dosfstools
 mkfs.fat -F32 "$device"1
 mkswap "$device"2
 swapon "$device"2
