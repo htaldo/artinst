@@ -24,6 +24,6 @@ swapon "$device"2
 mkfs.ext4 "$device"3
 
 mount "$device"3 /mnt
-basestrap /mnt base base-devel runit elogind-runit linux-lts linux-firmware
+basestrap /mnt base base-devel runit elogind-runit linux linux-firmware
 fstabgen -U /mnt >> /mnt/etc/fstab
 artix-chroot /mnt /bin/bash /aux.sh
