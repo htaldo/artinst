@@ -6,8 +6,14 @@ user=$3
 
 echo "STAGE 1: BASE"
 
-#RUN loadkeys latam
+#RUN loadkeys la-latin1
+#RUN pacman -Sy
+#RUN pacman -S git glibc
+#RUN git clone https://github.com/htaldo/artinst.git
 #RUN fdisk -l
+#RUN cd artinst
+#RUN chmod +x ai1.sh ai2.sh ai3.sh
+#RUN ./ai1.sh
 
 fdisk $device
 #config partitioning
