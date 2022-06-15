@@ -1,7 +1,14 @@
 #!/bin/bash
 
+network=$1
+
 echo "STAGE 2: POST-INSTALL"
 #mv ~/artinst/fonts/* /usr/share/fonts
+sv up dhcpcd-runit
+sv up iwd-runit
+iwctl station wlan0 scan
+iwctl station wlan0 connect "$network"
+
 doas pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xsetroot xorg-xhost
 doas pacman -S rust cargo python3 go fzf file acpi patch xdg-utils pulse-audio alsa-utils alsa-utils-doc alsa-lib alsaconf alsa-ucm-conf pamixer xclip maim zathura mpv zathura-djvu zathura-pdf-mupdf newsboat calcurse pfetch neofetch bat tmux cmus picom rxvt-unicode inkscape libreoffice krita blender
 doas pacman -S gcc g++ libx11-dev libxft-dev libxinerama-dev ncurses dbus-x11 adwaita-gtk3-theme adwaita-icon-theme ttf-dejavu gtk3 setxkbmap video-intel-x68 light udisks2 dbus feh
