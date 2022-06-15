@@ -26,5 +26,5 @@ mount "$device"3 /mnt
 basestrap /mnt base base-devel runit elogind-runit linux linux-firmware
 fstabgen -U /mnt >> /mnt/etc/fstab
 cp aux.sh /mnt/aux.sh
-artix-chroot /mnt /bin/bash /aux.sh
+artix-chroot /mnt /bin/bash /aux.sh $device $hostname $user
 #TODO: borrar aux.sh del directorio root en la nueva instalación
