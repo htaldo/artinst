@@ -24,7 +24,7 @@ artix-chroot /mnt
 
 ln -sf /usr/share/zoneinfo/America/Mexico_City /etc/localtime
 hwclock --systohc
-pacman -S vim doas
+pacman --noconfirm -S vim doas
 cp configs/doas.conf /etc/doas.conf
 
 sed -i '/es_MX\.UTF-8/s/^#//' /etc/locale.gen
@@ -46,10 +46,10 @@ Include = /etc/pacman.d/mirrorlist-arch
 Include = /etc/pacman.d/mirrorlist-arch" >> /etc/pacman.conf
 pacman-key --populate archlinux
 pacman -Sy
-pacman -S artix-archlinux-support
-pacman -S --needed base-devel
-pacman -S polkit ntfs-3g wget git unzip dhcpcd-runit iwd-runit
-doas pacman -S grub efibootmgr dosfstools os-prober mtools 
+pacman --noconfirm -S artix-archlinux-support
+pacman --noconfirm -S --needed base-devel
+pacman --noconfirm -S polkit ntfs-3g wget git unzip dhcpcd-runit iwd-runit
+pacman --noconfirm -S grub efibootmgr dosfstools os-prober mtools 
 
 mkdir /boot/EFI
 mount $device"1" /boot/EFI
