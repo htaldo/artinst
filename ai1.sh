@@ -7,8 +7,7 @@ user=$3
 echo "STAGE 1: BASE"
 
 #RUN loadkeys la-latin1
-#RUN pacman -Sy
-#RUN pacman -S git glibc
+#RUN pacman -Sy git glibc
 #RUN git clone https://github.com/htaldo/artinst.git
 #RUN fdisk -l
 #RUN cd artinst
