@@ -12,7 +12,7 @@ echo "STAGE 1: BASE"
 #RUN git clone https://github.com/htaldo/artinst.git
 #RUN fdisk -l
 #RUN cd artinst
-#RUN chmod +x ai1.sh ai2.sh ai3.sh
+#RUN chmod +x *.sh
 #RUN ./ai1.sh
 
 fdisk $device
