@@ -1,13 +1,13 @@
 #!/bin/bash
 
+device=$1
+hostname=$2
+user=$3
+
 echo "STAGE 1: BASE"
 
 #RUN loadkeys latam
 #RUN fdisk -l
-
-device=$1
-hostname=$2
-user=$3
 
 fdisk $device
 #config partitioning
