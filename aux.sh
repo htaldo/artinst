@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ln -sf /usr/share/zoneinfo/America/Mexico_City /etc/localtime
 hwclock --systohc
 pacman --noconfirm -S vim doas
