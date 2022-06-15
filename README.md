@@ -1,2 +1,2 @@
 # artinst
-Artix LInux install script
+Artix Linux install+postinstall script (my setup)
