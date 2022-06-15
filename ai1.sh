@@ -15,7 +15,7 @@ pacman -S dosfstools
 mkfs.fat -F32 "$device"1
 mkswap "$device"2
 swapon "$device"2
-mkfs.ext4 "device"3
+mkfs.ext4 "$device"3
 
 mount "$device"3 /mnt
 basestrap /mnt base base-devel runit elogind-runit linux-lts linux-firmware
@@ -35,13 +35,8 @@ echo "127.0.0.1   localhost" >> /etc/hosts
 echo "::1         localhost" >> /etc/hosts
 echo "127.0.1.1   $hostname.localdomain   $hostname" >> /etc/hosts
 
-passwd
-useradd -m $user
-passwd $user
-usermod -aG wheel,audio,video,input,power,optical,storage,lp,scanner,dbus,adbusers,uucp,vboxusers $user
 
-
-doas echo "[extra]
+echo "[extra]
 Include = /etc/pacman.d/mirrorlist-arch
 
 [community]
@@ -49,22 +44,24 @@ Include = /etc/pacman.d/mirrorlist-arch
 
 [multilib]
 Include = /etc/pacman.d/mirrorlist-arch" >> /etc/pacman.conf
-doas pacman-key --populate archlinux
-doas pacman -Sy
-
-doas pacman -S artix-archlinux-support
-doas pacman -S --needed base-devel
-doas pacman -S polkit ntfs-3g wget git unzip dhcpcd-runit iwd-runit
-sv up dhcpcd-runit
-sv up iwd-runit
+pacman-key --populate archlinux
+pacman -Sy
+pacman -S artix-archlinux-support
+pacman -S --needed base-devel
+pacman -S polkit ntfs-3g wget git unzip dhcpcd-runit iwd-runit
 doas pacman -S grub efibootmgr dosfstools os-prober mtools 
-#TODO: ver si se puede instalar todo solo con wifi
 
 mkdir /boot/EFI
 mount $device"1" /boot/EFI
 grub-install $device --target=x86_64-efi --efi-directory=/boot/EFI --bootloader-id=grub_uefi --recheck --removable
-grub-mkconfig -o /boot/grub/grub.cfg 
+grub-mkconfig -o /boot/grub/grub.cfg
 
+passwd
+useradd -m $user
+passwd $user
+usermod -aG wheel,audio,video,input,power,optical,storage,lp,scanner,dbus,uucp $user
+
+#TODO: ver si se puede instalar todo solo con wifi
 exit
 umount -R /mnt
 reboot
