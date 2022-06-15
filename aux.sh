@@ -3,15 +3,19 @@
 ln -sf /usr/share/zoneinfo/America/Mexico_City /etc/localtime
 hwclock --systohc
 pacman --noconfirm -S vim doas
-cp configs/doas.conf /etc/doas.conf
+echo "permit persist :wheel
+permit nopass :wheel as root cmd /sbin/poweroff
+permit nopass :wheel as root cmd /sbin/reboot
+permit nopass :wheel as root cmd /usr/bin/tee
+" >> /etc/doas.conf
 
 sed -i '/es_MX\.UTF-8/s/^#//' /etc/locale.gen
 locale-gen
 echo "LANG=es_MX.UTF-8" >> /etc/locale.conf
 echo "KEYMAP=la-latin1" >> /etc/vconsole.conf
-echo "127.0.0.1   localhost" >> /etc/hosts
-echo "::1         localhost" >> /etc/hosts
-echo "127.0.1.1   $hostname.localdomain   $hostname" >> /etc/hosts
+echo "127.0.0.1   localhost
+::1         localhost
+127.0.1.1   $hostname.localdomain   $hostname" >> /etc/hosts
 
 
 echo "[extra]
