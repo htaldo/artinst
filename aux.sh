@@ -18,6 +18,7 @@ sed -i '/es_MX\.UTF-8/s/^#//' /etc/locale.gen
 locale-gen
 echo "LANG=es_MX.UTF-8" >> /etc/locale.conf
 echo "KEYMAP=la-latin1" >> /etc/vconsole.conf
+echo "$hostname" >> /etc/hostname
 echo "127.0.0.1   localhost
 ::1         localhost
 127.0.1.1   $hostname.localdomain   $hostname" >> /etc/hosts
