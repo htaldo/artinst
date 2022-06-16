@@ -9,13 +9,15 @@ sv up iwd-runit
 iwctl station wlan0 scan
 iwctl station wlan0 connect "$network"
 
+doas pacman --noconfirm -Rsn sudo
 doas pacman --noconfirm -S xorg-server xorg-xinit xorg-xrandr xorg-xsetroot xorg-xhost
 doas pacman --noconfirm -S rust cargo python3 go fzf file acpi patch xdg-utils pulse-audio alsa-utils alsa-utils-doc alsa-lib alsaconf alsa-ucm-conf pamixer xclip maim zathura mpv zathura-djvu zathura-pdf-mupdf newsboat calcurse pfetch neofetch bat tmux cmus picom rxvt-unicode inkscape libreoffice krita blender
 doas pacman --noconfirm -S gcc g++ libx11-dev libxft-dev libxinerama-dev ncurses dbus-x11 adwaita-gtk3-theme adwaita-icon-theme ttf-dejavu gtk3 setxkbmap video-intel-x68 light udisks2 dbus feh
 
 #scripts
-cp -r ~/artinst/bin ~/.local/bin
+cp -r ~/artinst/~/.local/bin
 
+mkdir ~/.local
 mkdir ~/.local/src
 cd ~/.local/src
 #install dwm
@@ -38,6 +40,7 @@ cp -r voidrice/.local/bin/statusbar statusbar
 rm -rf voidrice
 
 #install dmenu
+cd ~/
 wget https://dl.suckless.org/tools/dmenu-5.0.tar.gz
 tar -xzvf dmenu-5.0.tar.gz
 cd dmenu-5.0
