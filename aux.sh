@@ -36,7 +36,8 @@ Include = /etc/pacman.d/mirrorlist-arch
 Include = /etc/pacman.d/mirrorlist-arch" >> /etc/pacman.conf
 pacman-key --populate archlinux
 
-pacman --noconfirm -Sy --needed base-devel 
+pacman -Sy 
+pacman --noconfirm -S --needed base-devel 
 pacman --noconfirm -S polkit ntfs-3g wget git unzip dhcpcd-runit iwd-runit grub efibootmgr dosfstools os-prober mtools 
 
 mkdir /boot/efi
