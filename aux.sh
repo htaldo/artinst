@@ -40,7 +40,9 @@ pacman-key --populate archlinux
 
 pacman -Sy 
 pacman --noconfirm -S --needed base-devel 
-pacman --noconfirm -S polkit ntfs-3g wget git unzip dhcpcd-runit iwd-runit grub efibootmgr dosfstools os-prober mtools 
+pacman --noconfirm -S polkit ntfs-3g wget git unzip dhcpcd-runit iwd-runit grub efibootmgr dosfstools os-prober mtools
+ln -s /etc/runit/sv/dhcpcd /etc/runit/runsvdir/default
+ln -s /etc/runit/sv/iwd /etc/runit/runsvdir/default
 
 mkdir /boot/efi
 mount $device"1" /boot/efi
