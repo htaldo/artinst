@@ -28,3 +28,6 @@ fstabgen -U /mnt >> /mnt/etc/fstab
 cp aux.sh /mnt/aux.sh
 artix-chroot /mnt /bin/bash /aux.sh $device $hostname $user
 #TODO: borrar aux.sh del directorio root en la nueva instalación
+umount -R /mnt
+cp -r /root/artinst /mnt/home/$user/artinst
+reboot
