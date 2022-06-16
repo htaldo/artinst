@@ -3,7 +3,6 @@
 device=$1
 hostname=$2
 user=$3
-echo "HOSTNAME = $hostname"; sleep 10
 
 ln -sf /usr/share/zoneinfo/America/Mexico_City /etc/localtime
 hwclock --systohc
