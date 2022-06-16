@@ -66,9 +66,9 @@ cp ~/artinst/configs/.newsboat/config ~/.newsboat/config
 cp ~/artinst/configs/cmus/kr.theme ~/.config/cmus/kr.theme
 
 #paru
-cd ~/.local/src
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si 
-sed -i '[bin]/s/^#//' /etc/paru.conf
-sed -i 'Sudo=doas/s/^#//' /etc/paru.conf
+#cd ~/.local/src
+#git clone https://aur.archlinux.org/paru.git
+#cd paru
+#makepkg -si 
+#sed -i '[bin]/s/^#//' /etc/paru.conf
+#sed -i 'Sudo=doas/s/^#//' /etc/paru.conf
