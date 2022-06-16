@@ -21,8 +21,12 @@ echo "127.0.0.1   localhost
 ::1         localhost
 127.0.1.1   $hostname.localdomain   $hostname" >> /etc/hosts
 
-
-echo "[extra]
+pacman --noconfirm -S artix-archlinux-support
+sed -i '/\[lib32\]/s/^#//' /etc/pacman.conf
+sed -i '/#Include = \/etc\/pacman.d\/mirrorlist/s/^#//4' /etc/pacman.conf
+echo "
+#Arch
+[extra]
 Include = /etc/pacman.d/mirrorlist-arch
 
 [community]
@@ -31,15 +35,13 @@ Include = /etc/pacman.d/mirrorlist-arch
 [multilib]
 Include = /etc/pacman.d/mirrorlist-arch" >> /etc/pacman.conf
 pacman-key --populate archlinux
-pacman -Sy
-pacman --noconfirm -S artix-archlinux-support
-pacman --noconfirm -S --needed base-devel
-pacman --noconfirm -S polkit ntfs-3g wget git unzip dhcpcd-runit iwd-runit
-pacman --noconfirm -S grub efibootmgr dosfstools os-prober mtools 
 
-mkdir /boot/EFI
-mount $device"1" /boot/EFI
-grub-install $device --target=x86_64-efi --efi-directory=/boot/EFI --bootloader-id=grub_uefi --recheck --removable
+pacman --noconfirm -Sy --needed base-devel 
+pacman --noconfirm -S polkit ntfs-3g wget git unzip dhcpcd-runit iwd-runit grub efibootmgr dosfstools os-prober mtools 
+
+mkdir /boot/efi
+mount $device"1" /boot/efi
+grub-install $device --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub_uefi --recheck --removable
 grub-mkconfig -o /boot/grub/grub.cfg
 
 passwd
