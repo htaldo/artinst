@@ -23,7 +23,7 @@ echo "127.0.0.1   localhost
 
 pacman --noconfirm -S artix-archlinux-support
 sed -i '/\[lib32\]/s/^#//' /etc/pacman.conf
-sed -i '/#Include = \/etc\/pacman.d\/mirrorlist/s/^#//4' /etc/pacman.conf
+sed -i '/#Include/s/^#//4' /etc/pacman.conf
 echo "
 #Arch
 [extra]
