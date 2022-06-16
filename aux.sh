@@ -3,6 +3,7 @@
 device=$1
 hostname=$2
 user=$3
+echo "HOSTNAME = $hostname"; sleep 10
 
 ln -sf /usr/share/zoneinfo/America/Mexico_City /etc/localtime
 hwclock --systohc
@@ -23,7 +24,8 @@ echo "127.0.0.1   localhost
 
 pacman --noconfirm -S artix-archlinux-support
 sed -i '/\[lib32\]/s/^#//' /etc/pacman.conf
-sed -i '/^#Include.*/s/^#//4' /etc/pacman.conf
+#uncomment the next line (#Include = ...)
+sed -i '/\[lib32\]/{n;s/#//}' /etc/pacman.conf
 echo "
 #Arch
 [extra]
