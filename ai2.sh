@@ -2,8 +2,8 @@
 
 echo "STAGE 2: POST-INSTALL"
 #mv ~/artinst/fonts/* /usr/share/fonts
-sv up dhcpcd
-sv up iwd
+doas sv up dhcpcd
+doas sv up iwd
 
 #network=$1
 #iwctl station wlan0 scan
