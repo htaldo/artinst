@@ -4,7 +4,7 @@
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
-export PATH=/home/aldo/.cargo/bin:/home/aldo/.local/bin:$PATH
+export PATH=/home/aldo/.cargo/bin:/home/aldo/.local/bin:/home/aldo/.local/bin/statusbar:$PATH
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
