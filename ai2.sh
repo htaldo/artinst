@@ -15,7 +15,7 @@ doas pacman --noconfirm -S xf86-video-fbdev
 #graphics (for intel)
 #doas pacman --noconfirm -S xf86-video-intel mesa lib32-mesa vulkan-intel
 
-doas pacman --noconfirm -S xorg-server xorg-xinit xorg-xrandr xorg-xsetroot xorg-xhost file acpi patch xdg-utils 
+doas pacman --noconfirm -S xorg xorg-server xorg-xinit xorg-xrandr xorg-xsetroot xorg-xhost file acpi patch xdg-utils 
 doas pacman --noconfirm -S pulseaudio pulseaudio-alsa alsa-utils alsa-lib pamixer 
 doas pacman --noconfirm -S xclip maim zathura mpv zathura-djvu zathura-pdf-mupdf newsboat calcurse pfetch tmux cmus picom rxvt-unicode 
 doas pacman --noconfirm -S gcc libx11 libxinerama libxft ncurses dbus adwaita-gtk3-theme adwaita-icon-theme ttf-dejavu gtk3 setxkbmap light udisks2 dbus feh
