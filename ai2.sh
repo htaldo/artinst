@@ -51,7 +51,7 @@ cd ~/
 wget https://dl.suckless.org/tools/dmenu-5.0.tar.gz
 tar -xzvf dmenu-5.0.tar.gz
 cd dmenu-5.0
-cp ~/artinst/configs/menu-5.0/config.h ~/.local/src/menu-5.0/config.h
+cp ~/artinst/configs/dmenu-5.0/config.h ~/.local/src/dmenu-5.0/config.h
 doas make clean install
 cd ..
 rm dmenu-5.0.tar.gz
