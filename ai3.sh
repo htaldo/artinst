@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "STAGE 3: EXTRA"
-doas pacman --noconfirm -S rust cargo python3 go fzf inkscape libreoffice krita blender bat 
+echo 1 | doas pacman --noconfirm -S rust cargo python3 go fzf inkscape libreoffice krita blender bat 
 
 #paru
 cd ~/.local/src
