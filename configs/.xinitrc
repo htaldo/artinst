@@ -44,9 +44,6 @@ picom -f &
 #wallpaper
 feh --bg-fill ~/pic/wp/cyp/5.jpg
 
-#statusbar
-./fl/sc/sb.sh -b &
-
 #execute dwm
 exec dwm
 
