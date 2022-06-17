@@ -51,7 +51,7 @@ cd ..
 rm dmenu-5.0.tar.gz
 
 #configs
-mkdir ~/.config ~/.newsboat
+mkdir ~/.config ~/.newsboat ~/.config/gtk-3.0 ~/.config/zathura ~/.config/mupen64plus ~/.config/lf ~/.config/cmus
 cp ~/artinst/configs/.bashrc ~/.bashrc
 cp ~/artinst/configs/.bash_profile ~/.bash_profile
 cp ~/artinst/configs/.xinitrc ~/.xinitrc
