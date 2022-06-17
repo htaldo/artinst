@@ -17,10 +17,8 @@ doas pacman --noconfirm -S xf86-video-fbdev
 
 doas pacman --noconfirm -S xorg xorg-server xorg-xinit xorg-xrandr xorg-xsetroot xorg-xhost file acpi patch xdg-utils 
 doas pacman --noconfirm -S pulseaudio pulseaudio-alsa alsa-utils alsa-lib pamixer 
-doas pacman --noconfirm -S xclip maim zathura mpv zathura-djvu zathura-pdf-mupdf newsboat calcurse neofetch tmux cmus picom rxvt-unicode 
-sleep 10
+doas pacman --noconfirm -S xclip maim zathura mpv zathura-djvu zathura-pdf-mupdf newsboat calcurse neofetch tmux cmus picom rxvt-unicode
 doas pacman --noconfirm -S gcc libx11 libxinerama libxft ncurses dbus adwaita-icon-theme ttf-dejavu gtk3 light udisks2 dbus feh
-sleep 10
 
 #scripts
 mkdir ~/.local
