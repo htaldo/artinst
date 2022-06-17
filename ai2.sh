@@ -15,9 +15,9 @@ doas pacman --noconfirm -S rust cargo python3 go fzf file acpi patch xdg-utils p
 doas pacman --noconfirm -S gcc g++ libx11-dev libxft-dev libxinerama-dev ncurses dbus-x11 adwaita-gtk3-theme adwaita-icon-theme ttf-dejavu gtk3 setxkbmap video-intel-x68 light udisks2 dbus feh
 
 #scripts
-cp -r ~/artinst/~/.local/bin
-
 mkdir ~/.local
+cp -r ~/artinst/bin ~/.local/bin
+
 mkdir ~/.local/src
 cd ~/.local/src
 #install dwm
