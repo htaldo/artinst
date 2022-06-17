@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "STAGE 3: EXTRA"
-doas pacman --noconfirm -S rust cargo python3 go fzf inkscape libreoffice krita blender bat neofetch
+doas pacman --noconfirm -S rust cargo python3 go fzf inkscape libreoffice krita blender bat pfetch
 echo 1 | paru simple-mtpfs 
 echo 1 | paru lf 
 echo 1 | paru librewolf-bin 
