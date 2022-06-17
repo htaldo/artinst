@@ -48,7 +48,7 @@ cp -r voidrice/.local/bin/statusbar statusbar
 rm -rf voidrice
 
 #install dmenu
-cd ~/
+cd ~/.local/src
 wget https://dl.suckless.org/tools/dmenu-5.0.tar.gz
 tar -xzvf dmenu-5.0.tar.gz
 cd dmenu-5.0
