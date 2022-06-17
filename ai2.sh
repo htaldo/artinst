@@ -32,7 +32,7 @@ cd ~/.local/src
 wget https://dl.suckless.org/dwm/dwm-6.2.tar.gz
 tar -xzvf dwm-6.2.tar.gz
 cd dwm-6.2
-cp ~/artinst/configs/dwm-6.2/config.h ~/.local/src/dwm-6.2/config.h
+#cp ~/artinst/configs/dwm-6.2/config.h ~/.local/src/dwm-6.2/config.h
 wget https://dwm.suckless.org/patches/statuscmd/dwm-statuscmd-20210405-67d76bd.diff
 patch < dwm-statuscmd-20210405-67d76bd.diff
 doas make clean install
