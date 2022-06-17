@@ -1,0 +1,16 @@
+cmd open-with %"$@" $fx
+map o push :open-with<space>
+
+cmd open ${{
+	case $(file --mime-type "$f" -bL) in
+		text/*)
+		[ -n "$(printf "$f" | grep csv)" ] && sc-im "$f" || vim "$f"
+		;;
+		video/*) mpv "$f";;
+		application/pdf) zathura "$f" & disown;;
+		image/vnd.djvu) zathura "$f" & disown;;
+		image/svg+xml) inkscape "$f" & disown;;
+		image/*) feh "$f" & disown;;
+		*) xdg-open "$f";; 
+	esac
+}}
