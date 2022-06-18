@@ -8,8 +8,8 @@ cd ~/.local/src
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si 
-sed -i '[bin]/s/^#//' /etc/paru.conf
-sed -i 'Sudo=doas/s/^#//' /etc/paru.conf
+doas sed -i '/\[bin\]/s/^#//' /etc/paru.conf
+doas sed -i '/Sudo = doas/s/^#//' /etc/paru.conf
 
 echo 1 | paru simple-mtpfs 
 echo 1 | paru lf 
