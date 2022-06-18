@@ -1,43 +1,43 @@
 /* See LICENSE file for copyright and license details. */
 
 /*scripts*/
-static const char *cmusnext[] = { "/home/aldo/fl/sc/cm.sh", "-l", NULL};
-static const char *cmusprev[] = { "/home/aldo/fl/sc/cm.sh", "-h", NULL};
-static const char *cmusvi[] = { "/home/aldo/fl/sc/cm.sh", "-k", NULL};
-static const char *cmusvd[] = { "/home/aldo/fl/sc/cm.sh", "-j", NULL};
-static const char *playpause[] = { "/home/aldo/fl/sc/cm.sh", "-p", NULL};
-static const char *clipboardss[] = { "/home/aldo/fl/sc/ss.sh", "-s", NULL};
-static const char *save_ss_as[] = { "/home/aldo/fl/sc/ss.sh", "-a", NULL};
-static const char *snapshot[] = { "/home/aldo/fl/sc/ss.sh", "-z", NULL};
-static const char *dclipboardss[] = { "/home/aldo/fl/sc/ss.sh", "-x", NULL};
-static const char *pb_clipboard[] = { "/home/aldo/fl/sc/pb.sh", "-c", NULL};
-static const char *pb[] = { "/home/aldo/fl/sc/pb.sh", "-p", NULL};
-static const char *sr[] = { "/home/aldo/fl/sc/sr.sh", "ARGUMENTS", NULL};
-static const char *lt[] = { "/home/aldo/fl/sc/lt.sh", "ARGUMENTS", NULL};
-static const char *rd[] = { "/home/aldo/fl/sc/rd.sh", "ARGUMENTS", NULL};
-static const char *conet[] = { "/home/aldo/fl/sc/conet.sh", "ARGUMENTS", NULL};
-static const char *mount[] = { "/home/aldo/fl/sc/mt.sh", "ARGUMENTS", NULL};
-static const char *pm[] = { "/home/aldo/fl/sc/pm.sh", "ARGUMENTS", NULL};
-static const char *calcurse[] = { "/home/aldo/fl/sc/super.sh", "-c", NULL};
-static const char *lf[] = { "/home/aldo/fl/sc/super.sh", "-e", NULL};
-static const char *firefox[] = { "/home/aldo/fl/sc/super.sh", "-f", NULL};
-static const char *cmus[] = { "/home/aldo/fl/sc/super.sh", "-m", NULL};
-static const char *newsboat[] = { "/home/aldo/fl/sc/super.sh", "-n", NULL};
-static const char *elaunch[] = { "/home/aldo/fl/sc/el.sh", "ARGUMENTS", NULL};
-static const char *n64[] = { "/home/aldo/fl/sc/64.sh", "ARGUMENTS", NULL};
-static const char *lo[] = { "/home/aldo/fl/sc/lo.sh", "ARGUMENTS", NULL};
-static const char *ff[] = { "/home/aldo/fl/sc/ff.sh", "ARGUMENTS", NULL};
-static const char *fd[] = { "/home/aldo/fl/sc/fd.sh", "ARGUMENTS", NULL};
-static const char *fr[] = { "/home/aldo/fl/sc/fr.sh", "ARGUMENTS", NULL};
-static const char *bb[] = { "/home/aldo/fl/sc/bb.sh", "ARGUMENTS", NULL};
-static const char *surf[] = { "/home/aldo/fl/sc/super.sh", "-s", NULL};
-static const char *teams[] = { "/home/aldo/fl/sc/super.sh", "-t", NULL};
-static const char *vim[] = { "/home/aldo/fl/sc/super.sh", "-v", NULL};
-static const char *ytfzf[] = { "/home/aldo/fl/sc/super.sh", "-y", NULL};
-static const char *ib[] = { "/home/aldo/fl/sc/vb.sh", "-l", NULL};
-static const char *db[] = { "/home/aldo/fl/sc/vb.sh", "-h", NULL};
-static const char *iv[] = { "/home/aldo/fl/sc/vb.sh", "-j", NULL};
-static const char *dv[] = { "/home/aldo/fl/sc/vb.sh", "-k", NULL};
+static const char *cmusnext[] = { "/home/aldo/.local/bin/cm.sh", "-l", NULL};
+static const char *cmusprev[] = { "/home/aldo/.local/bin/cm.sh", "-h", NULL};
+static const char *cmusvi[] = { "/home/aldo/.local/bin/cm.sh", "-k", NULL};
+static const char *cmusvd[] = { "/home/aldo/.local/bin/cm.sh", "-j", NULL};
+static const char *playpause[] = { "/home/aldo/.local/bin/cm.sh", "-p", NULL};
+static const char *clipboardss[] = { "/home/aldo/.local/bin/ss.sh", "-s", NULL};
+static const char *save_ss_as[] = { "/home/aldo/.local/bin/ss.sh", "-a", NULL};
+static const char *snapshot[] = { "/home/aldo/.local/bin/ss.sh", "-z", NULL};
+static const char *dclipboardss[] = { "/home/aldo/.local/bin/ss.sh", "-x", NULL};
+static const char *pb_clipboard[] = { "/home/aldo/.local/bin/pb.sh", "-c", NULL};
+static const char *pb[] = { "/home/aldo/.local/bin/pb.sh", "-p", NULL};
+static const char *sr[] = { "/home/aldo/.local/bin/sr.sh", "ARGUMENTS", NULL};
+static const char *lt[] = { "/home/aldo/.local/bin/lt.sh", "ARGUMENTS", NULL};
+static const char *rd[] = { "/home/aldo/.local/bin/rd.sh", "ARGUMENTS", NULL};
+static const char *conet[] = { "/home/aldo/.local/bin/conet.sh", "ARGUMENTS", NULL};
+static const char *mount[] = { "/home/aldo/.local/bin/mt.sh", "ARGUMENTS", NULL};
+static const char *pm[] = { "/home/aldo/.local/bin/pm.sh", "ARGUMENTS", NULL};
+static const char *calcurse[] = { "/home/aldo/.local/bin/super.sh", "-c", NULL};
+static const char *lf[] = { "/home/aldo/.local/bin/super.sh", "-e", NULL};
+static const char *firefox[] = { "/home/aldo/.local/bin/super.sh", "-f", NULL};
+static const char *cmus[] = { "/home/aldo/.local/bin/super.sh", "-m", NULL};
+static const char *newsboat[] = { "/home/aldo/.local/bin/super.sh", "-n", NULL};
+static const char *elaunch[] = { "/home/aldo/.local/bin/el.sh", "ARGUMENTS", NULL};
+static const char *n64[] = { "/home/aldo/.local/bin/64.sh", "ARGUMENTS", NULL};
+static const char *lo[] = { "/home/aldo/.local/bin/lo.sh", "ARGUMENTS", NULL};
+static const char *ff[] = { "/home/aldo/.local/bin/ff.sh", "ARGUMENTS", NULL};
+static const char *fd[] = { "/home/aldo/.local/bin/fd.sh", "ARGUMENTS", NULL};
+static const char *fr[] = { "/home/aldo/.local/bin/fr.sh", "ARGUMENTS", NULL};
+static const char *bb[] = { "/home/aldo/.local/bin/bb.sh", "ARGUMENTS", NULL};
+static const char *surf[] = { "/home/aldo/.local/bin/super.sh", "-s", NULL};
+static const char *teams[] = { "/home/aldo/.local/bin/super.sh", "-t", NULL};
+static const char *vim[] = { "/home/aldo/.local/bin/super.sh", "-v", NULL};
+static const char *ytfzf[] = { "/home/aldo/.local/bin/super.sh", "-y", NULL};
+static const char *ib[] = { "/home/aldo/.local/bin/vb.sh", "-l", NULL};
+static const char *db[] = { "/home/aldo/.local/bin/vb.sh", "-h", NULL};
+static const char *iv[] = { "/home/aldo/.local/bin/vb.sh", "-j", NULL};
+static const char *dv[] = { "/home/aldo/.local/bin/vb.sh", "-k", NULL};
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -73,7 +73,7 @@ static const Rule rules[] = {
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
-static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
+static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
@@ -94,86 +94,87 @@ static const Layout layouts[] = {
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
+#define STATUSBAR "dwmblocks"
+
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-//static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *dmenucmd[] = { "dmenu_run", NULL};
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY|ShiftMask,             XK_Right,  spawn,          {.v = cmusnext } },
-	{ MODKEY|ShiftMask,             XK_Left,   spawn,          {.v = cmusprev } },
-	{ MODKEY|ShiftMask,             XK_Up,     spawn,          {.v = cmusvi } },
-	{ MODKEY|ShiftMask,             XK_Down,   spawn,          {.v = cmusvd } },
-	{ MODKEY|ShiftMask,             XK_d,      spawn,          {.v = playpause } },
-	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = clipboardss } },
-	{ MODKEY|ShiftMask,             XK_a,      spawn,          {.v = save_ss_as } },
-	{ MODKEY|ShiftMask,             XK_z,      spawn,          {.v = snapshot } },
-	{ MODKEY|ShiftMask,             XK_x,      spawn,          {.v = dclipboardss } },
-	{ MODKEY|ShiftMask,             XK_r,      spawn,          {.v = sr } },
-	{ MODKEY|ShiftMask,             XK_m,      spawn,          {.v = pm } },
-	{ MODKEY|ShiftMask,             XK_e,      spawn,          {.v = lt } },
-	{ MODKEY|ShiftMask,             XK_f,      spawn,          {.v = rd } },
-	{ MODKEY|ShiftMask,             XK_w,      spawn,          {.v = conet } },
-	{ MODKEY|ShiftMask,             XK_n,      spawn,          {.v = mount } },
-	{ MODKEY|ShiftMask,             XK_j,      spawn,          {.v = pb } },
-	{ MODKEY|ShiftMask,             XK_k,      spawn,          {.v = pb_clipboard } },
-	{ MODKEY|ShiftMask,             XK_i,      spawn,          {.v = ff } },
-	{ MODKEY|ShiftMask,             XK_o,      spawn,          {.v = fd } },
-	{ MODKEY|ShiftMask,             XK_p,      spawn,          {.v = fr } },
-	{ MODKEY|ShiftMask,             XK_v,      spawn,          {.v = bb } },
-	{ MOD2KEY,                      XK_c,      spawn,          {.v = calcurse } },
-	{ MOD2KEY,                      XK_e,      spawn,          {.v = lf } },
-	{ MOD2KEY,                      XK_f,      spawn,          {.v = firefox } },
-	{ MOD2KEY,                      XK_m,      spawn,          {.v = cmus } },
-	{ MOD2KEY,                      XK_n,      spawn,          {.v = newsboat } },
-	{ MOD2KEY,                      XK_l,      spawn,          {.v = lo } },
-	{ MOD2KEY,                      XK_p,      spawn,          {.v = elaunch } },
-	{ MOD2KEY,                      XK_g,      spawn,          {.v = n64 } },
-	{ MOD2KEY,                      XK_s,      spawn,          {.v = surf } },
-	{ MOD2KEY,                      XK_t,      spawn,          {.v = teams } },
-	{ MOD2KEY,                      XK_v,      spawn,          {.v = vim } },
-	{ MOD2KEY,                      XK_y,      spawn,          {.v = ytfzf } },
-	//inician combinaciones locales
-	{ MOD2KEY,			XK_Up,     spawn,	   {.v = iv} },
-	{ MOD2KEY,			XK_Down,   spawn,	   {.v = dv} },
-	{ MOD2KEY,			XK_Right,  spawn,	   {.v = ib} },
-	{ MOD2KEY,			XK_Left,   spawn,	   {.v = db} },
-	//terminan combinaciones locales
-	{ MODKEY,                       XK_b,      togglebar,      {0} },
-	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
-	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
-	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
-	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
-	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
-	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
-	{ MODKEY,                       XK_Return, zoom,           {0} },
-	{ MODKEY,                       XK_Tab,    view,           {0} },
-	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
-	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
-	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,                       XK_space,  setlayout,      {0} },
-	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
-	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
-	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
-	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
-	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
-	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	TAGKEYS(                        XK_1,                      0)
-	TAGKEYS(                        XK_2,                      1)
-	TAGKEYS(                        XK_3,                      2)
-	TAGKEYS(                        XK_4,                      3)
-	TAGKEYS(                        XK_5,                      4)
-	TAGKEYS(                        XK_6,                      5)
-	TAGKEYS(                        XK_7,                      6)
-	TAGKEYS(                        XK_8,                      7)
-	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+    { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+    { MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+    { MODKEY|ShiftMask,             XK_Right,  spawn,          {.v = cmusnext } },
+    { MODKEY|ShiftMask,             XK_Left,   spawn,          {.v = cmusprev } },
+    { MODKEY|ShiftMask,             XK_Up,     spawn,          {.v = cmusvi } },
+    { MODKEY|ShiftMask,             XK_Down,   spawn,          {.v = cmusvd } },
+    { MODKEY|ShiftMask,             XK_d,      spawn,          {.v = playpause } },
+    { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = clipboardss } },
+    { MODKEY|ShiftMask,             XK_a,      spawn,          {.v = save_ss_as } },
+    { MODKEY|ShiftMask,             XK_z,      spawn,          {.v = snapshot } },
+    { MODKEY|ShiftMask,             XK_x,      spawn,          {.v = dclipboardss } },
+    { MODKEY|ShiftMask,             XK_r,      spawn,          {.v = sr } },
+    { MODKEY|ShiftMask,             XK_m,      spawn,          {.v = pm } },
+    { MODKEY|ShiftMask,             XK_e,      spawn,          {.v = lt } },
+    { MODKEY|ShiftMask,             XK_f,      spawn,          {.v = rd } },
+    { MODKEY|ShiftMask,             XK_w,      spawn,          {.v = conet } },
+    { MODKEY|ShiftMask,             XK_n,      spawn,          {.v = mount } },
+    { MODKEY|ShiftMask,             XK_j,      spawn,          {.v = pb } },
+    { MODKEY|ShiftMask,             XK_k,      spawn,          {.v = pb_clipboard } },
+    { MODKEY|ShiftMask,             XK_i,      spawn,          {.v = ff } },
+    { MODKEY|ShiftMask,             XK_o,      spawn,          {.v = fd } },
+    { MODKEY|ShiftMask,             XK_p,      spawn,          {.v = fr } },
+    { MODKEY|ShiftMask,             XK_v,      spawn,          {.v = bb } },
+    { MOD2KEY,                      XK_c,      spawn,          {.v = calcurse } },
+    { MOD2KEY,                      XK_e,      spawn,          {.v = lf } },
+    { MOD2KEY,                      XK_f,      spawn,          {.v = firefox } },
+    { MOD2KEY,                      XK_m,      spawn,          {.v = cmus } },
+    { MOD2KEY,                      XK_n,      spawn,          {.v = newsboat } },
+    { MOD2KEY,                      XK_l,      spawn,          {.v = lo } },
+    { MOD2KEY,                      XK_p,      spawn,          {.v = elaunch } },
+    { MOD2KEY,                      XK_g,      spawn,          {.v = n64 } },
+    { MOD2KEY,                      XK_s,      spawn,          {.v = surf } },
+    { MOD2KEY,                      XK_t,      spawn,          {.v = teams } },
+    { MOD2KEY,                      XK_v,      spawn,          {.v = vim } },
+    { MOD2KEY,                      XK_y,      spawn,          {.v = ytfzf } },
+    //inician combinaciones locales
+    { MOD2KEY,          XK_Up,     spawn,      {.v = iv} },
+    { MOD2KEY,          XK_Down,   spawn,      {.v = dv} },
+    { MOD2KEY,          XK_Right,  spawn,      {.v = ib} },
+    { MOD2KEY,          XK_Left,   spawn,      {.v = db} },
+    //terminan combinaciones locales
+    { MODKEY,                       XK_b,      togglebar,      {0} },
+    { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
+    { MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
+    { MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
+    { MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
+    { MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
+    { MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
+    { MODKEY,                       XK_Return, zoom,           {0} },
+    { MODKEY,                       XK_Tab,    view,           {0} },
+    { MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
+    { MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
+    { MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+    { MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
+    { MODKEY,                       XK_space,  setlayout,      {0} },
+    { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+    { MODKEY,                       XK_0,      view,           {.ui = ~0 } },
+    { MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
+    { MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
+    { MODKEY,                       XK_period, focusmon,       {.i = +1 } },
+    { MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
+    { MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+    TAGKEYS(                        XK_1,                      0)
+    TAGKEYS(                        XK_2,                      1)
+    TAGKEYS(                        XK_3,                      2)
+    TAGKEYS(                        XK_4,                      3)
+    TAGKEYS(                        XK_5,                      4)
+    TAGKEYS(                        XK_6,                      5)
+    TAGKEYS(                        XK_7,                      6)
+    TAGKEYS(                        XK_8,                      7)
+    TAGKEYS(                        XK_9,                      8)
+    { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
 /* button definitions */
@@ -183,7 +184,9 @@ static Button buttons[] = {
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
 	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
 	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
-	{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
+	{ ClkStatusText,        0,              Button1,        sigstatusbar,   {.i = 1} },
+	{ ClkStatusText,        0,              Button2,        sigstatusbar,   {.i = 2} },
+	{ ClkStatusText,        0,              Button3,        sigstatusbar,   {.i = 3} },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
 	{ ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
 	{ ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
