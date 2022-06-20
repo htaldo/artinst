@@ -32,20 +32,20 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-# dwmstatus
-#dwmstatus 2>&1 >/dev/null &
-
 # keyboard layout
 setxkbmap latam &
 
-#compositor
+# compositor
 picom -f &
 
-#wallpaper
+# wallpaper
 feh --bg-fill ~/pic/wp/cyp/5.jpg
 
-#execute dwm
+# execute dwm
 exec dwm
+
+# dwmblocks
+dwmblocks &
 
 #twm &
 #xclock -geometry 50x50-1+1 &
