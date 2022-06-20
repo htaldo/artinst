@@ -11,13 +11,14 @@ makepkg -si
 doas sed -i '/\[bin\]/s/^#//' /etc/paru.conf
 doas sed -i '/Sudo = doas/s/^#//' /etc/paru.conf
 
-paru simple-mtpfs 
+paru font-awesome
 paru lf 
-paru pfetch
 paru librewolf-bin 
+paru urxvt-resize-font-git
+paru simple-mtpfs 
 paru betterlockscreen 
+paru pfetch
 paru yt-dlp 
-paru ytfzf 
-paru urxvt-resize-font-git 
+paru ytfzf  
 paru thokr-git 
 paru sc-im
