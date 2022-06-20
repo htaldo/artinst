@@ -41,11 +41,11 @@ picom -f &
 # wallpaper
 feh --bg-fill ~/pic/wp/cyp/5.jpg
 
-# execute dwm
-exec dwm
-
 # dwmblocks
 dwmblocks &
+
+# execute dwm
+exec dwm
 
 #twm &
 #xclock -geometry 50x50-1+1 &
