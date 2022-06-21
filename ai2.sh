@@ -41,6 +41,9 @@ cd ..
 rm dwm-6.2.tar.gz
 git clone https://github.com/LukeSmithxyz/dwmblocks.git
 cd dwmblocks
+wget https://dwm.suckless.org/patches/statuscmd/dwmblocks-statuscmd-20210402-96cbb45.diff
+patch < dwmblocks-statuscmd-20210402-96cbb45.diff
+rm dwmblocks-statuscmd-20210402-96cbb45.diff
 doas make clean install
 #dwmblocks scripts
 cd ~/.local/bin
