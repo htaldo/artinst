@@ -9,5 +9,5 @@ export PATH=/home/aldo/.cargo/bin:/home/aldo/.local/bin:/home/aldo/.local/bin/st
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+#alias ls='ls --color=auto'
+#PS1='[\u@\h \W]\$ '
