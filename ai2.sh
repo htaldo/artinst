@@ -22,6 +22,7 @@ doas pacman --noconfirm -S gcc libx11 libxinerama libxft ncurses dbus adwaita-ic
 
 #scripts
 mkdir ~/.local
+mkdir ~/.local/bin
 cp -r ~/artinst/bin ~/.local/bin
 cd ~./local/bin
 doas chmod +x *.sh
