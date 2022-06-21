@@ -49,6 +49,9 @@ doas make clean install
 cd ~/.local/bin
 git clone https://github.com/LukeSmithxyz/voidrice.git
 cp -r voidrice/.local/bin/statusbar statusbar
+cd statusbar
+#TODO:verificar si el siguiente chmod no afecta a directorios
+chmod +x *
 rm -rf voidrice
 
 #install dmenu
