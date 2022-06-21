@@ -22,21 +22,21 @@ echo "127.0.0.1   localhost
 ::1         localhost
 127.0.1.1   $hostname.localdomain   $hostname" >> /etc/hosts
 
-pacman --noconfirm -S artix-archlinux-support
+#Repositories (NOTE: Assuming x86_64 architecture)
 sed -i '/\[lib32\]/s/^#//' /etc/pacman.conf
 #uncomment the next line (#Include = ...)
 sed -i '/\[lib32\]/{n;s/#//}' /etc/pacman.conf
 echo "
 [universe]
-Server = https://universe.artixlinux.org/$arch
-Server = https://mirror1.artixlinux.org/universe/$arch
-Server = https://mirror.pascalpuffke.de/artix-universe/$arch
-Server = https://artixlinux.qontinuum.space/artixlinux/universe/os/$arch
-Server = https://mirror1.cl.netactuate.com/artix/universe/$arch
+Server = https://universe.artixlinux.org/x86_64
+Server = https://mirror1.artixlinux.org/universe/x86_64
+Server = https://mirror.pascalpuffke.de/artix-universe/x86_64
+Server = https://artixlinux.qontinuum.space/artixlinux/universe/os/x86_64
+Server = https://mirror1.cl.netactuate.com/artix/universe/x86_64
 Server = https://ftp.crifo.org/artix-universe/" >> /etc/pacman.conf
-pacman -Sy 
+pacman --noconfirm -Sy artix-archlinux-support
  
- echo "
+echo "
 #Arch
 [extra]
 Include = /etc/pacman.d/mirrorlist-arch
