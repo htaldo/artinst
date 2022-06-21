@@ -29,6 +29,7 @@ cp aux.sh /mnt/aux.sh
 artix-chroot /mnt /bin/bash /aux.sh $device $hostname $user
 #TODO: borrar aux.sh del directorio root en la nueva instalación
 cp -r /root/artinst /mnt/home/$user/artinst
-echo "Stage 1 finished. You may now #umount -R /mnt; reboot"
-#umount -R /mnt
-#reboot
+rm /mnt/aux.sh
+#echo "Stage 1 finished. You may now #umount -R /mnt; reboot"
+umount -R /mnt
+reboot
