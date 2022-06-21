@@ -27,6 +27,14 @@ sed -i '/\[lib32\]/s/^#//' /etc/pacman.conf
 #uncomment the next line (#Include = ...)
 sed -i '/\[lib32\]/{n;s/#//}' /etc/pacman.conf
 echo "
+[universe]
+  Server = https://universe.artixlinux.org/$arch
+  Server = https://mirror1.artixlinux.org/universe/$arch
+  Server = https://mirror.pascalpuffke.de/artix-universe/$arch
+  Server = https://artixlinux.qontinuum.space/artixlinux/universe/os/$arch
+  Server = https://mirror1.cl.netactuate.com/artix/universe/$arch
+  Server = https://ftp.crifo.org/artix-universe/
+  
 #Arch
 [extra]
 Include = /etc/pacman.d/mirrorlist-arch
@@ -37,6 +45,8 @@ Include = /etc/pacman.d/mirrorlist-arch
 [multilib]
 Include = /etc/pacman.d/mirrorlist-arch" >> /etc/pacman.conf
 pacman-key --populate archlinux
+
+sleep 10
 
 pacman -Sy 
 pacman --noconfirm -S --needed base-devel 
