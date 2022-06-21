@@ -76,3 +76,5 @@ cp ~/artinst/configs/mupen64plus/mupen64plus.cfg ~/.config/mupen64plus/mupen64pl
 cp ~/artinst/configs/lf/lfrc ~/.config/lf/lfrc
 cp ~/artinst/configs/.newsboat/config ~/.newsboat/config
 cp ~/artinst/configs/cmus/kr.theme ~/.config/cmus/kr.theme
+
+doas reboot
