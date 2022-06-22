@@ -11,9 +11,9 @@ doas sv up iwd
 
 doas pacman --noconfirm -Rsn sudo
 #graphics (for virtualbox)
-doas pacman --noconfirm -S xf86-video-fbdev
+#doas pacman --noconfirm -S xf86-video-fbdev
 #graphics (for intel)
-#doas pacman --noconfirm -S xf86-video-intel mesa lib32-mesa vulkan-intel
+doas pacman --noconfirm -S xf86-video-intel mesa lib32-mesa vulkan-intel
 
 doas pacman --noconfirm -S xorg xorg-server xorg-xinit xorg-xrandr xorg-xsetroot xorg-xhost file acpi patch xdg-utils 
 doas pacman --noconfirm -S pulseaudio pulseaudio-alsa alsa-utils alsa-lib pamixer 
