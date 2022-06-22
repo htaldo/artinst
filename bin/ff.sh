@@ -3,7 +3,7 @@
 query="$(echo -e '\c' | dmenu -p "find files:")"
 
 if [ -n "$query" ]; then
-	fdirs="fl pic"
+	fdirs="fl pic .local/bin"
 
 	select="$(find $fdirs -type f | fzf -f "$query" | dmenu -l 10)"
 	[ -z "$select" ] && exit
