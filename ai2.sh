@@ -35,6 +35,7 @@ cd dwm-6.2
 wget https://dwm.suckless.org/patches/statuscmd/dwm-statuscmd-20210405-67d76bd.diff
 patch < dwm-statuscmd-20210405-67d76bd.diff
 rm dwm-statuscmd-20210405-67d76bd.diff
+cp ~/artinst/configs/dwm-6.2/dwm.c ~/.local/src/dwm-6.2/dwm.c
 cp ~/artinst/configs/dwm-6.2/config.h ~/.local/src/dwm-6.2/config.h
 doas make clean install
 cd ..
@@ -44,6 +45,7 @@ cd dwmblocks
 wget https://dwm.suckless.org/patches/statuscmd/dwmblocks-statuscmd-20210402-96cbb45.diff
 patch < dwmblocks-statuscmd-20210402-96cbb45.diff
 rm dwmblocks-statuscmd-20210402-96cbb45.diff
+cp ~/artinst/configs/dwmblocks/dwmblocks.c ~/.local/src/dwmblocks/dwmblocks.c
 doas make clean install
 #dwmblocks scripts
 cd ~/.local/bin
