@@ -53,8 +53,8 @@ git clone https://github.com/LukeSmithxyz/voidrice.git
 cp -r voidrice/.local/bin/statusbar statusbar
 cd statusbar
 #TODO:verificar si el siguiente chmod no afecta a directorios
-chmod +x *
-rm -rf voidrice
+chmod +x *; cd
+rm -rf ~./local/bin/voidrice
 
 #install dmenu
 cd ~/.local/src
