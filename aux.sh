@@ -6,7 +6,8 @@ user=$3
 
 ln -sf /usr/share/zoneinfo/America/Mexico_City /etc/localtime
 hwclock --systohc
-pacman --noconfirm -S vim doas
+#gvim allows to use the clipboard buffer
+pacman --noconfirm -S gvim doas
 echo "permit persist :wheel
 permit nopass :wheel as root cmd /sbin/poweroff
 permit nopass :wheel as root cmd /sbin/reboot
