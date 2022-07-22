@@ -17,3 +17,5 @@
 /color14/s/#[[:xdigit:]]*/#f5c2e7/
 /color7/s/#[[:xdigit:]]*/#c3bac6/
 /color15/s/#[[:xdigit:]]*/#c3bac6/
+
+/URxvt\.font/s/.*/URxvt.font: xft:AlmaMono:regular:size=12/
