@@ -4,3 +4,5 @@
 /SchemeSel/s/#[[:xdigit:]]*/#7cbd27/2
 /SchemeOut/s/#[[:xdigit:]]*/#292a2b/
 /SchemeOut/s/#[[:xdigit:]]*/#7cbd27/2
+
+/\*fonts/s/".*"/"Alma Mono:size=10:antialias=true"/
