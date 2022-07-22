@@ -3,3 +3,7 @@
 /gray3/s/#[[:xdigit:]]*/#f4f4f4/
 /gray4/s/#[[:xdigit:]]*/#f4f4f4/
 /cyan/s/#[[:xdigit:]]*/#001c47/
+
+/borderpx/s/[[:digit:]]/0/
+/\*fonts/s/".*"/"Alma Mono:size=10:antialias=true"/
+/dmenufont\[\]/s/".*"/"Alma Mono:size=10:antialias=true"/
