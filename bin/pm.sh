@@ -12,7 +12,7 @@ case $select in
 		doas /sbin/reboot
 	;;
 	"4)flush")
-		sync;  echo 3 > doas tee /proc/sys/vm/drop_caches
+		sync; echo 3 | doas tee /proc/sys/vm/drop_caches
 	;;
 	"9)suspend")
 		echo deep | doas /usr/bin/tee /sys/power/mem_sleep
