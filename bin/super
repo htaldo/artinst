@@ -1,5 +1,6 @@
 #!/bin/sh
 
+#super - shortcuts assigned to the super key
 case $1 in
 	"-c") 
 		urxvt -e calcurse
