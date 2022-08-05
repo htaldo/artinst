@@ -1,5 +1,6 @@
 #!/bin/sh
 
+#mt - mount a device through dmenu
 #list formatting
 list="$(lsblk | grep -v disk | awk '{print $1,$4,$7}' | cut -c 7-)"
 list="$(echo "$list" | grep -v sda | sed "1 d" | grep .)"
