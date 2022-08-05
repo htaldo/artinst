@@ -1,12 +1,13 @@
-#°/bin/sh
+#!/bin/sh
 
+#lt - create a latex document from a template
 options="1_ipn\n2_note"
 select="$(echo -e $options | dmenu -p "create latex:")"
 [ -z "$select" ] && exit
 name="$(echo -e '\c' | dmenu -p "file name:")"
 [ -z "$name" ] && exit
 
-ltdir=fl/ipn/6/bsf/3
+ltdir=~
 
 case $select in
 	"1_ipn")
