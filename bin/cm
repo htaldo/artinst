@@ -1,5 +1,6 @@
 #!/bin/sh
 
+#cm - control cmus through keybindings (set in dmenu's config.h)
 case "$1" in
 	"-p")
 		cmus-remote -u
