@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#fr - find reference (quickref)
+#open a quickref through dmenu
 query="$(echo -e '\c' | dmenu -p "quickref")"
 arr=($query)
 
