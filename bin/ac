@@ -1,5 +1,6 @@
 #!/bin/sh
 
+#autocompile - compile code upon saving
 #get raw filename from primary selection
 raw="$(xclip -o )"
 #format the filename properly
