@@ -1,6 +1,7 @@
 #!/bin/sh
 
-ssdir=fl/ipn/6/bsf/3/pic
+#ss.sh - take screenshots
+ssdir=~/pic/ss
 
 case $1 in
 	"-s") 
