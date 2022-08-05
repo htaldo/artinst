@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#lo - layout
+#launch a saved layout (an assortment of applications altogether)
 cd ~/.local/bin/res/lo
 layout="$(echo -e "$(ls)" | dmenu -p "select a layout:")"
 ~/.local/bin/res/lo/$layout
