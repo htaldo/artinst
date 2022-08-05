@@ -1,5 +1,6 @@
 #!/bin/sh
 
+#vb - volume and brightness control
 case "$1" in
 	"-j")
 		pamixer -i 2
