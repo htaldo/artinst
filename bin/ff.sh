@@ -1,5 +1,6 @@
 #!/bin/sh
 
+#ff - find files
 query="$(echo -e '\c' | dmenu -p "find files:")"
 
 if [ -n "$query" ]; then
