@@ -1,5 +1,6 @@
 #!/bin/sh
 
+#th - change current theme
 homdir='/home/aldo'
 thdir='/home/aldo/.local/bin/res/th'
 
