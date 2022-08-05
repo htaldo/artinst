@@ -1,60 +1,60 @@
 /* See LICENSE file for copyright and license details. */
 
 /*scripts*/
-static const char *cmusnext[] = { "/home/aldo/.local/bin/cm.sh", "-l", NULL};
-static const char *cmusprev[] = { "/home/aldo/.local/bin/cm.sh", "-h", NULL};
-static const char *cmusvi[] = { "/home/aldo/.local/bin/cm.sh", "-k", NULL};
-static const char *cmusvd[] = { "/home/aldo/.local/bin/cm.sh", "-j", NULL};
-static const char *playpause[] = { "/home/aldo/.local/bin/cm.sh", "-p", NULL};
+static const char *cmusnext[] = { "/home/aldo/.local/bin/cm", "-l", NULL};
+static const char *cmusprev[] = { "/home/aldo/.local/bin/cm", "-h", NULL};
+static const char *cmusvi[] = { "/home/aldo/.local/bin/cm", "-k", NULL};
+static const char *cmusvd[] = { "/home/aldo/.local/bin/cm", "-j", NULL};
+static const char *playpause[] = { "/home/aldo/.local/bin/cm", "-p", NULL};
 static const char *clipboardss[] = { "/home/aldo/.local/bin/ss.sh", "-s", NULL};
 static const char *save_ss_as[] = { "/home/aldo/.local/bin/ss.sh", "-a", NULL};
 static const char *snapshot[] = { "/home/aldo/.local/bin/ss.sh", "-z", NULL};
 static const char *dclipboardss[] = { "/home/aldo/.local/bin/ss.sh", "-x", NULL};
-static const char *pb_clipboard[] = { "/home/aldo/.local/bin/pb.sh", "-c", NULL};
-static const char *pb[] = { "/home/aldo/.local/bin/pb.sh", "-p", NULL};
-static const char *sr[] = { "/home/aldo/.local/bin/sr.sh", "ARGUMENTS", NULL};
-static const char *lt[] = { "/home/aldo/.local/bin/lt.sh", "ARGUMENTS", NULL};
-static const char *rd[] = { "/home/aldo/.local/bin/rd.sh", "ARGUMENTS", NULL};
-static const char *conet[] = { "/home/aldo/.local/bin/conet.sh", "ARGUMENTS", NULL};
-static const char *mount[] = { "/home/aldo/.local/bin/mt.sh", "ARGUMENTS", NULL};
-static const char *pm[] = { "/home/aldo/.local/bin/pm.sh", "ARGUMENTS", NULL};
-static const char *calcurse[] = { "/home/aldo/.local/bin/super.sh", "-c", NULL};
-static const char *lf[] = { "/home/aldo/.local/bin/super.sh", "-e", NULL};
-static const char *firefox[] = { "/home/aldo/.local/bin/super.sh", "-f", NULL};
-static const char *cmus[] = { "/home/aldo/.local/bin/super.sh", "-m", NULL};
-static const char *newsboat[] = { "/home/aldo/.local/bin/super.sh", "-n", NULL};
-static const char *elaunch[] = { "/home/aldo/.local/bin/el.sh", "ARGUMENTS", NULL};
-static const char *n64[] = { "/home/aldo/.local/bin/64.sh", "ARGUMENTS", NULL};
-static const char *lo[] = { "/home/aldo/.local/bin/lo.sh", "ARGUMENTS", NULL};
-static const char *ff[] = { "/home/aldo/.local/bin/ff.sh", "ARGUMENTS", NULL};
-static const char *fd[] = { "/home/aldo/.local/bin/fd.sh", "ARGUMENTS", NULL};
-static const char *fr[] = { "/home/aldo/.local/bin/fr.sh", "ARGUMENTS", NULL};
-static const char *bb[] = { "/home/aldo/.local/bin/bb.sh", "ARGUMENTS", NULL};
-static const char *surf[] = { "/home/aldo/.local/bin/super.sh", "-s", NULL};
-static const char *teams[] = { "/home/aldo/.local/bin/super.sh", "-t", NULL};
-static const char *vim[] = { "/home/aldo/.local/bin/super.sh", "-v", NULL};
-static const char *ytfzf[] = { "/home/aldo/.local/bin/super.sh", "-y", NULL};
-static const char *ib[] = { "/home/aldo/.local/bin/vb.sh", "-l", NULL};
-static const char *db[] = { "/home/aldo/.local/bin/vb.sh", "-h", NULL};
-static const char *iv[] = { "/home/aldo/.local/bin/vb.sh", "-j", NULL};
-static const char *dv[] = { "/home/aldo/.local/bin/vb.sh", "-k", NULL};
+static const char *pb_clipboard[] = { "/home/aldo/.local/bin/pb", "-c", NULL};
+static const char *pb[] = { "/home/aldo/.local/bin/pb", "-p", NULL};
+static const char *sr[] = { "/home/aldo/.local/bin/sr", "", NULL};
+static const char *lt[] = { "/home/aldo/.local/bin/lt", "", NULL};
+static const char *rd[] = { "/home/aldo/.local/bin/rd", "", NULL};
+static const char *conet[] = { "/home/aldo/.local/bin/conet", "", NULL};
+static const char *mount[] = { "/home/aldo/.local/bin/mt", "", NULL};
+static const char *pm[] = { "/home/aldo/.local/bin/pm", "", NULL};
+static const char *calcurse[] = { "/home/aldo/.local/bin/super", "-c", NULL};
+static const char *lf[] = { "/home/aldo/.local/bin/super", "-e", NULL};
+static const char *firefox[] = { "/home/aldo/.local/bin/super", "-f", NULL};
+static const char *cmus[] = { "/home/aldo/.local/bin/super", "-m", NULL};
+static const char *newsboat[] = { "/home/aldo/.local/bin/super", "-n", NULL};
+static const char *elaunch[] = { "/home/aldo/.local/bin/el", "", NULL};
+static const char *n64[] = { "/home/aldo/.local/bin/64", "", NULL};
+static const char *lo[] = { "/home/aldo/.local/bin/lo", "", NULL};
+static const char *ff[] = { "/home/aldo/.local/bin/ff", "", NULL};
+static const char *fd[] = { "/home/aldo/.local/bin/fd", "", NULL};
+static const char *fr[] = { "/home/aldo/.local/bin/fr", "", NULL};
+static const char *bm[] = { "/home/aldo/.local/bin/bm", "", NULL};
+static const char *surf[] = { "/home/aldo/.local/bin/super", "-s", NULL};
+static const char *teams[] = { "/home/aldo/.local/bin/super", "-t", NULL};
+static const char *vim[] = { "/home/aldo/.local/bin/super", "-v", NULL};
+static const char *ytfzf[] = { "/home/aldo/.local/bin/super", "-y", NULL};
+static const char *ib[] = { "/home/aldo/.local/bin/vb", "-l", NULL};
+static const char *db[] = { "/home/aldo/.local/bin/vb", "-h", NULL};
+static const char *iv[] = { "/home/aldo/.local/bin/vb", "-j", NULL};
+static const char *dv[] = { "/home/aldo/.local/bin/vb", "-k", NULL};
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Alma Mono:size=10:antialias=true" };
 static const char dmenufont[]       = "Alma Mono:size=10:antialias=true";
-static const char col_gray1[]       = "#282828";
-static const char col_gray2[]       = "#282828";
-static const char col_gray3[]       = "#ebdbb2";
-static const char col_gray4[]       = "#ebdbb2";
-static const char col_cyan[]        = "#282828";
+static const char col_gray1[]       = "#2e3440";
+static const char col_gray2[]       = "#2e3440";
+static const char col_gray3[]       = "#d8dee9";
+static const char col_gray4[]       = "#d8dee9";
+static const char col_cyan[]        = "#2e3440";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeSel]  = { col_gray4, col_gray1,  col_cyan  },
 };
 
 /* tagging */
@@ -125,7 +125,7 @@ static Key keys[] = {
     { MODKEY|ShiftMask,             XK_i,      spawn,          {.v = ff } },
     { MODKEY|ShiftMask,             XK_o,      spawn,          {.v = fd } },
     { MODKEY|ShiftMask,             XK_p,      spawn,          {.v = fr } },
-    { MODKEY|ShiftMask,             XK_v,      spawn,          {.v = bb } },
+    { MODKEY|ShiftMask,             XK_b,      spawn,          {.v = bm } },
     { MOD2KEY,                      XK_c,      spawn,          {.v = calcurse } },
     { MOD2KEY,                      XK_e,      spawn,          {.v = lf } },
     { MOD2KEY,                      XK_f,      spawn,          {.v = firefox } },
