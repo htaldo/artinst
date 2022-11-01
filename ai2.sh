@@ -29,32 +29,22 @@ doas chmod +x *.sh
 mkdir ~/.local/src
 cd ~/.local/src
 #install dwm
-wget https://dl.suckless.org/dwm/dwm-6.2.tar.gz
-tar -xzvf dwm-6.2.tar.gz
-cd dwm-6.2
-wget https://dwm.suckless.org/patches/statuscmd/dwm-statuscmd-20210405-67d76bd.diff
-patch < dwm-statuscmd-20210405-67d76bd.diff
-rm dwm-statuscmd-20210405-67d76bd.diff
-cp ~/artinst/configs/dwm-6.2/dwm.c ~/.local/src/dwm-6.2/dwm.c
-cp ~/artinst/configs/dwm-6.2/config.h ~/.local/src/dwm-6.2/config.h
+wget https://dl.suckless.org/dwm/dwm-6.4.tar.gz
+tar xzvf dwm-6.2.tar.gz
+cd dwm-6.4
+cp ~/artinst/configs/dwm-6.4/config.h ~/.local/src/dwm-6.4/config.h
 doas make clean install
 cd ..
-rm dwm-6.2.tar.gz
-git clone https://github.com/LukeSmithxyz/dwmblocks.git
+rm dwm-6.4.tar.gz
+git clone https://github.com/torrinfail/dwmblocks
 cd dwmblocks
-wget https://dwm.suckless.org/patches/statuscmd/dwmblocks-statuscmd-20210402-96cbb45.diff
-patch < dwmblocks-statuscmd-20210402-96cbb45.diff
-rm dwmblocks-statuscmd-20210402-96cbb45.diff
-cp ~/artinst/configs/dwmblocks/dwmblocks.c ~/.local/src/dwmblocks/dwmblocks.c
+make
+cp ~/artinst/configs/dwmblocks/config.h ~/.local/src/dwmblocks/config.h
 doas make clean install
 #dwmblocks scripts
-cd ~/.local/bin
-git clone https://github.com/LukeSmithxyz/voidrice.git
-cp -r voidrice/.local/bin/statusbar statusbar
-cd statusbar
+cd ~/.local/bin/statusbar
 #TODO:verificar si el siguiente chmod no afecta a directorios
 chmod +x *; cd
-rm -rf ~./local/bin/voidrice
 
 #install dmenu
 cd ~/.local/src
