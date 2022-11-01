@@ -39,7 +39,7 @@ rm dwm-6.4.tar.gz
 git clone https://github.com/torrinfail/dwmblocks
 cd dwmblocks
 make
-cp ~/artinst/configs/dwmblocks/config.h ~/.local/src/dwmblocks/config.h
+cp ~/artinst/configs/dwmblocks/blocks.h ~/.local/src/dwmblocks/blocks.h
 doas make clean install
 #dwmblocks scripts
 cd ~/.local/bin/statusbar
