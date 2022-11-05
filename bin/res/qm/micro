@@ -1,0 +1,1 @@
+dug						du -h | grep '[[:digit:]]G' ; we

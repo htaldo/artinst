@@ -1,0 +1,8 @@
+/SchemeNorm/s/#[[:xdigit:]]*/#f7f7f7/
+/SchemeNorm/s/#[[:xdigit:]]*/#003061/2
+/SchemeSel/s/#[[:xdigit:]]*/#003061/
+/SchemeSel/s/#[[:xdigit:]]*/#f7f7f7/2
+/SchemeOut/s/#[[:xdigit:]]*/#003061/
+/SchemeOut/s/#[[:xdigit:]]*/#f7f7f7/2
+
+/\*fonts/s/".*"/"Alma Mono:size=10:antialias=true"/

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#TODO:
+#check if dep folder already exists; else create it (for the selected subject)
+
+select="$(ls ~/fl/ipn/7 | dmenu)"; [ -z "$select" ] && exit
+dep="2"
+
+case $select in
+	"ice")
+		cd ~/fl/ipn/7/ice/$dep/
+		urxvt &
+		zathura notas.pdf &
+		sleep 0.2
+		urxvt -e nvim notas.tex &
+	;;
+	"gral") 
+		exit
+	;;
+	*)
+		date="$(sd | cut -d\  -f1)"
+		urxvt -e nvim ~/fl/ipn/7/$select/$dep/$date
+	;;
+esac
