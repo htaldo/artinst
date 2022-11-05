@@ -57,19 +57,12 @@ cd ..
 rm dmenu-5.0.tar.gz
 
 #configs
-mkdir ~/.config ~/.newsboat ~/.config/gtk-3.0 ~/.config/zathura ~/.config/mupen64plus ~/.config/lf ~/.config/cmus
+mkdir ~/.config ~/.newsboat
 cp ~/artinst/configs/.bashrc ~/.bashrc
 cp ~/artinst/configs/.bash_profile ~/.bash_profile
 cp ~/artinst/configs/.xinitrc ~/.xinitrc
 cp ~/artinst/configs/.Xresources ~/.Xresources
 cp ~/artinst/configs/.vimrc ~/.vimrc
-cp ~/artinst/configs/mimeapps.list ~/.config/mimeapps.list
-cp ~/artinst/configs/picom.conf ~/.config/picom.conf
-cp ~/artinst/configs/gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini
-cp ~/artinst/configs/zathura/zathurarc ~/.config/zathura/zathurarc
-cp ~/artinst/configs/mupen64plus/mupen64plus.cfg ~/.config/mupen64plus/mupen64plus.cfg
-cp ~/artinst/configs/lf/lfrc ~/.config/lf/lfrc
-cp ~/artinst/configs/.newsboat/config ~/.newsboat/config
-cp ~/artinst/configs/cmus/kr.theme ~/.config/cmus/kr.theme
+cp -r ~/artinst/configs/.config ~/.config
 
 doas reboot
