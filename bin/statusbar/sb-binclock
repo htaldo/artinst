@@ -1,0 +1,12 @@
+#!/bin/sh
+#while :; do sb-binclock; sleep 1; clear; done
+
+bbdpath="/home/aldo/.local/bin/res/bbd"
+dt="$(date "+%m %d %I %M %S")"
+#dt="$(date "+%d %m %y %I %M %S")"
+i=1
+
+while [ "$i" -lt 6 ]; do
+	tail -n +"$((10#$(cut -d\  -f$i <<< "$dt") + 1))" $bbdpath |head -n 1
+	i=$((i + 1))
+done | tr -d \\n

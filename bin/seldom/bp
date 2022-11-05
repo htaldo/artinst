@@ -1,0 +1,6 @@
+#!/bin/bash
+#bp (biopython) install packages for bio and other projects
+
+paru python-pip
+paru boost swig
+pip install wheel vina

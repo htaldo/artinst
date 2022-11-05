@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#to install support for bluetooth:
+#doas pacman -S bluez-runit bluez-utils
+#ln -s /etc/runit/sv/bluetoothd/ 
+#doas sv up bluetoothd
+
+bluetoothctl power on
+bluetoothctl agent on
+bluetoothctl default-agent
+bluetoothctl scan on

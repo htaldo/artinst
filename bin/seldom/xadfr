@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cd ~/.local/src/adfr/ADFRsuite-1.0/bin/ && bash
