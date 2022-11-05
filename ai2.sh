@@ -19,6 +19,7 @@ doas pacman --noconfirm -S xorg xorg-server xorg-xinit xorg-xrandr xorg-xsetroot
 doas pacman --noconfirm -S pulseaudio pulseaudio-alsa alsa-utils alsa-lib pamixer 
 doas pacman --noconfirm -S xclip maim zathura mpv zathura-djvu zathura-pdf-mupdf newsboat calcurse neofetch tmux cmus picom rxvt-unicode
 doas pacman --noconfirm -S gcc libx11 libxinerama libxft ncurses dbus adwaita-icon-theme ttf-dejavu gtk3 light udisks2 dbus feh
+doas pacman --noconfirm -S mtpfs jmtpfs gvfs-mtp gvfs-gphoto2
 
 #scripts
 mkdir ~/.local
