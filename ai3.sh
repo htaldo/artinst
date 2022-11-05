@@ -21,3 +21,5 @@ paru yt-dlp
 paru ytfzf  
 paru thokr-git 
 paru sc-im
+
+curl -sS https://starship.rs/install.sh | doas sh
