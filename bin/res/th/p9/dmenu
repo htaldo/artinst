@@ -1,8 +1,0 @@
-/SchemeNorm/s/#[[:xdigit:]]*/#000000/
-/SchemeNorm/s/#[[:xdigit:]]*/#e8fcf8/2
-/SchemeSel/s/#[[:xdigit:]]*/#000000/
-/SchemeSel/s/#[[:xdigit:]]*/#9cefef/2
-/SchemeOut/s/#[[:xdigit:]]*/#000000/
-/SchemeOut/s/#[[:xdigit:]]*/#52aaad/2
-
-/\*fonts/s/".*"/"GoMono:size=10\.5"/

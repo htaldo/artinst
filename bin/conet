@@ -1,7 +1,0 @@
-#!/bin/sh
-
-#conet - connect to a known network
-select="$(echo 'LIST' | dmenu -l 5)"
-iwctl station wlan0 connect "$select" 
-
-#TODO put the list of networks in a separate file

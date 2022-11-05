@@ -1,7 +1,0 @@
-/darkcolor/s/#[[:xdigit:]]*/#f4f4f4/
-/lightcolor/s/#[[:xdigit:]]*/#001c47/
-/default-bg/s/#[[:xdigit:]]*/#001c47/
-/inputbar-fg/s/#[[:xdigit:]]*/#f4f4f4/
-/inputbar-bg/s/#[[:xdigit:]]*/#001c47/
-/statusbar-fg/s/#[[:xdigit:]]*/#f4f4f4/
-/statusbar-bg/s/#[[:xdigit:]]*/#001c47/

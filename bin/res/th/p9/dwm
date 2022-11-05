@@ -1,9 +1,0 @@
-/gray1/s/#[[:xdigit:]]*/#e8fcf8/
-/gray2/s/#[[:xdigit:]]*/#9cefef/
-/gray3/s/#[[:xdigit:]]*/#000000/
-/gray4/s/#[[:xdigit:]]*/#000000/
-/cyan/s/#[[:xdigit:]]*/#52aaad/
-
-/borderpx/s/[[:digit:]]/6/
-/\*fonts/s/".*"/"GoMono:size=10\.5"/
-/dmenufont\[\]/s/".*"/"GoMono:size=10\.5"/

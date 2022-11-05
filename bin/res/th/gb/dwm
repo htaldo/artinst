@@ -1,9 +1,0 @@
-/gray1/s/#[[:xdigit:]]*/#282828/
-/gray2/s/#[[:xdigit:]]*/#282828/
-/gray3/s/#[[:xdigit:]]*/#ebdbb2/
-/gray4/s/#[[:xdigit:]]*/#ebdbb2/
-/cyan/s/#[[:xdigit:]]*/#282828/
-
-/borderpx/s/[[:digit:]]/0/
-/\*fonts/s/".*"/"Alma Mono:size=10:antialias=true"/
-/dmenufont\[\]/s/".*"/"Alma Mono:size=10:antialias=true"/
