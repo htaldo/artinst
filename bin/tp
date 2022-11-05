@@ -1,0 +1,5 @@
+#!/bin/bash
+#text to pdf
+#USAGE: cat [FILES] | tp [OUT_NAME]
+
+sed 's/\t/    /g' | iconv -f utf-8 -t iso-8859-1 | enscript -X 88591 -o - | ps2pdf - $1.pdf

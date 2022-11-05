@@ -1,0 +1,4 @@
+#!/bin/sh
+
+#sd - short date
+echo "$(date +%d%m%y%%%H%M%S | tr % \ )"

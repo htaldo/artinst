@@ -1,0 +1,4 @@
+#!/bin/bash
+#we - Wait til Enter
+
+read -p "Press Enter to continue" </dev/tty

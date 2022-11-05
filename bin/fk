@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#fk - find files (terminal)
+hom="/home/aldo"
+[ -n "$1" ] && fdirs="$hom/fl $hom/pic $hom/.local/bin" || fdirs=""
+select="$(find $fdirs -type f | fzf -m)"
+
+if [ -n "$select" ]; then
+	#break multiline input (for multi-select)
+	AUXIFS=$IFS
+	IFS=$'\n'
+	select=($select)
+	IFS=$AUXIFS
+
+	#open file
+	for (( i=0; i<${#select[@]}; i++ ))
+	do 
+		f="${select[$i]}"
+		case $(file --mime-type "$f" -bL) in
+			text/*) 
+			([ -n "$(printf "$f" | grep csv)" ] && sc-im "$f"  || nvim "$f");;
+			video/*) mpv "$f";;
+			application/pdf) zathura "$f" &;;
+			image/vnd.djvu) zathura "$f" &;;
+			image/svg+xml) inkscape "$f" &;;
+			image/*) feh "$f" &;;
+			*) xdg-open "$f" &;;
+		esac
+	done
+fi

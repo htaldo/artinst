@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#fs - find snippet
+dir=$1; pattern=$2
+cd $dir
+raw="$(grep -d skip -r "$pattern" $(find | grep '.py$') | fzf)"
+[ -n "$raw" ] || exit
+file="$(cut -d : -f 1 <<< "$raw")"
+query="$(sed -e 's/[^:]\+://' -e 's/^[[:space:]]*//' <<< "$raw")"
+nvim -c "/$query" $file

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#fk - find dirs (terminal)
+hom="/home/aldo"
+[ -n "$1" ] && fdirs="$hom/fl $hom/pic $hom/.local/bin" || fdirs=""
+select="$(find $fdirs -type d | fzf -m)"
+[ -n "$select" ] &&	lf "${select[$i]}"

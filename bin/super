@@ -1,0 +1,37 @@
+#!/bin/sh
+
+#super - shortcuts assigned to the super key
+case $1 in
+	"-c") 
+		urxvt -e calcurse
+	;;
+	"-e")
+		urxvt -e lf & disown %-
+	;;
+	"-f")
+		firefox 2>/dev/null 1>/dev/null
+		#silence output to the terminal
+	;;
+	"-m") 
+		urxvt -e cmus
+	;;
+	"-n") 
+		urxvt -e newsboat
+	;;
+	"-s")
+		dldir=~/fl/dl
+		cd $dldir; surf duckduckgo.com
+	;;
+	"-t")
+		teams --disable-seccomp-filter-sandbox
+	;;
+	"-v")
+		urxvt -e nvim
+	;;
+	"-w")
+		urxvt -e w3m duckduckgo.com 
+	;;
+	"-y")
+		urxvt -e ytfzf
+	;;
+esac

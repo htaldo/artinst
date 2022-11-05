@@ -1,0 +1,4 @@
+#!/bin/sh
+
+#pm - powermenu
+qm -d pm

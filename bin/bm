@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#bm - create a bookmark and store it in a file
+cd ~/.local/bin/res/bm
+bmfile="$(ls | dmenu)"
+query="$(echo -e '\c' | dmenu -p "open bookmarks:")"
+[ -z "$query" ] && exit
+select="$(fzf -f "$query" < "$bmfile" | sed 's/\t.*//' |dmenu -l 10)" 
+[ -n "select" ] && librewolf "$(grep $select $bmfile | sed 's/^.*\t//')"

@@ -1,0 +1,47 @@
+#!/bin/sh
+
+#rd - rename directory
+#change the working directory for a script
+options="0_reset\n1_ss\n2_sr\n3_ff/fd\n4_dl\n5_lx"
+select="$(echo -e $options | dmenu -p "change working dir for:")"
+
+[ -z "$select" ] && exit
+
+if [ "$select" = "0_reset" ]; then
+	sed -i "s/ssdir=.*/ssdir=~\/pic\/ss/" ~/.local/bin/ss.sh
+	sed -i "s/srdir=.*/srdir=~\/vid/" ~/.local/bin/sr
+	sed -i "s/dldir=.*/dldir=~\/fl\/dl/" ~/.local/bin/super
+	sed -i "s/ltdir=.*/ltdir=~/" ~/.local/bin/lt
+	sed -i 's/fdirs=.*/fdirs="fl pic \.local\/bin"/' ~/.local/bin/ff
+	sed -i 's/fdirs=.*/fdirs="fl pic \.local\/bin"/' ~/.local/bin/fd
+else
+	cd
+	query="$(echo -e "\c" | dmenu -p "find dir:")"
+
+	#type - at the beginning to search a specific directory
+	if [ -n "$(echo $query | grep ^-)" ]; then
+		newdir="$(echo $query | cut -c2-)"
+	else 
+		raw="$(find fl pic vid -type d -print | grep "$query" | dmenu -l 10)"
+		newdir="$(echo $raw | sed 's/\//\\\//g')" 
+	fi
+	case $select in
+		"1_ss")
+			sed -i "s/ssdir=.*/ssdir=$newdir/" ~/.local/bin/ss.sh
+		;;
+		"2_sr")
+			sed -i "s/srdir=.*/srdir=$newdir/" ~/.local/bin/sr
+		;;
+		"3_ff/fd")
+			sed -i "s/fdirs=.*/fdirs=$newdir/" ~/.local/bin/ff
+			sed -i "s/fdirs=.*/fdirs=$newdir/" ~/.local/bin/fd
+		;;
+		"4_dl")
+			sed -i "s/dldir=.*/dldir=$newdir/" ~/.local/bin/super
+			sed -i "s/dldir=.*/dldir=$newdir/" ~/.local/bin/pb
+		;;
+		"5_lx")
+			sed -i "s/ltdir=.*/ltdir=$newdir/" ~/.local/bin/lt
+		;;
+	esac
+fi

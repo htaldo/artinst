@@ -1,0 +1,26 @@
+#!/bin/sh
+
+#lt - create a latex document from a template
+options="1_ipn\n2_note"
+select="$(echo -e $options | dmenu -p "create latex:")"
+[ -z "$select" ] && exit
+name="$(echo -e '\c' | dmenu -p "file name:")"
+[ -z "$name" ] && exit
+
+ltdir=~
+
+case $select in
+	"1_ipn")
+		#exit if ltdir is home (because of possible conflic with ~/pic)
+		#TODO create "ltpic" dir if ltdir is home
+		[ "$ltdir" == ~ ] && exit
+		mkdir ~/$ltdir/pic
+		cp ~/.local/bin/res/lt/0q.png ~/$ltdir/pic/0q.png
+		cp ~/.local/bin/res/lt/ipn.tex ~/$ltdir/$name.tex
+	;;	
+	"2_note")
+		cp ~/.local/bin/res/lt/note.tex ~/$ltdir/$name.tex
+	;;
+esac
+
+urxvt -e nvim ~/$ltdir/$name.tex
