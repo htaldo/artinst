@@ -1,0 +1,8 @@
+#!/bin/bash
+#edit the 'dwm' sed script in th/res
+
+sed -i 's/gray1/col_1/g' dwm
+sed -i 's/gray2/col_2/g' dwm
+sed -i 's/gray3/col_3/g' dwm
+sed -i 's/gray4/col_4/g' dwm
+sed -i 's/cyan/col_5/g' dwm

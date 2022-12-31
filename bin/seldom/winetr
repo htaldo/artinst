@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mkdir -p .wine; cd .wine
+WINEARCH=win32 WINEPREFIX=/home/aldo/.wine/main \
+winetricks d3dx9 dotnet35 dotnet452 dxvk vcrun2003 vcrun2005 vcrun2008 vcrun2010 vcrun2012 vcrun2013 vcrun2017 gdiplus corefonts

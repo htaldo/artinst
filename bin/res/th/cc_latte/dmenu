@@ -1,0 +1,9 @@
+/SchemeNorm/s/#[[:xdigit:]]*/#bcc0cc/
+/SchemeNorm/s/#[[:xdigit:]]*/#eff1f5/2
+/SchemeSel/s/#[[:xdigit:]]*/#eff1f5/
+/SchemeSel/s/#[[:xdigit:]]*/#ea76cb/2
+/SchemeOut/s/#[[:xdigit:]]*/#eff1f5/
+/SchemeOut/s/#[[:xdigit:]]*/#ea76cb/2
+
+/\*fonts/s/".*"/"Alma Mono:size=10:antialias=true"/
+/dmenufont\[\]/s/".*"/"Alma Mono:size=10:antialias=true"/

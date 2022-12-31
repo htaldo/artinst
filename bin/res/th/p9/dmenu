@@ -5,4 +5,3 @@
 /SchemeOut/s/#[[:xdigit:]]*/#000000/
 /SchemeOut/s/#[[:xdigit:]]*/#52aaad/2
 
-/\*fonts/s/".*"/"GoMono:size=10\.5"/

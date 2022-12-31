@@ -1,0 +1,4 @@
+#!/bin/bash
+#wd - print the working directory and send to clipboard and primary selection
+
+pwd | xclip -i -r

@@ -1,9 +1,7 @@
-/gray1/s/#[[:xdigit:]]*/#e8e7d3/
-/gray2/s/#[[:xdigit:]]*/#e8e7d3/
-/gray3/s/#[[:xdigit:]]*/#647b83/
-/gray4/s/#[[:xdigit:]]*/#647b83/
-/cyan/s/#[[:xdigit:]]*/#e8e7d3/
+/col_1/s/#[[:xdigit:]]*/#e8e7d3/
+/col_2/s/#[[:xdigit:]]*/#e8e7d3/
+/col_3/s/#[[:xdigit:]]*/#647b83/
+/col_4/s/#[[:xdigit:]]*/#647b83/
+/col_5/s/#[[:xdigit:]]*/#e8e7d3/
 
 /borderpx/s/[[:digit:]]/0/
-/\*fonts/s/".*"/"Alma Mono:size=10:antialias=true"/
-/dmenufont\[\]/s/".*"/"Alma Mono:size=10:antialias=true"/

@@ -1,8 +1,8 @@
-/gray1/s/#[[:xdigit:]]*/#001c47/
-/gray2/s/#[[:xdigit:]]*/#001c47/
-/gray3/s/#[[:xdigit:]]*/#f4f4f4/
-/gray4/s/#[[:xdigit:]]*/#f4f4f4/
-/cyan/s/#[[:xdigit:]]*/#001c47/
+/col_1/s/#[[:xdigit:]]*/#f4f4f4/
+/col_2/s/#[[:xdigit:]]*/#001c47/
+/col_3/s/#[[:xdigit:]]*/#001c47/
+/col_4/s/#[[:xdigit:]]*/#f4f4f4/
+/col_5/s/#[[:xdigit:]]*/#001c47/
 
 /borderpx/s/[[:digit:]]/0/
 /\*fonts/s/".*"/"Alma Mono:size=10:antialias=true"/

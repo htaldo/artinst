@@ -17,18 +17,18 @@ arr=($string)
 #check if string is a url (or mail address)
 if [ -n "$(echo "$string" | grep "^[^~/.].*@*.*\.[A-Za-z]\+.*")" ]; then
 	#check if url is youtube
-	if [ -n "$(echo "$string" | grep youtube)" ]; then
+	if [ -n "$(echo "$string" | grep 'youtu\.\{0,1\}be')" ]; then
 		menu="1) download audio\n2) download video\n3) mpv\n4) bookmark"
 			select="$(printf "$menu" | dmenu -p "youtube URL:")"
 			case $select in
 				"1) download audio")
 					#~/fl/sc/notif.sh youtube-dl: downloading audio
-					yt-dlp -x --audio-format mp3 "$string"
+					yt-dlp -q -x --audio-format mp3 "$string"
 					#~/fl/sc/notif.sh youtube-dl: downloaded audio
 				;;
 				"2) download video")
 					#~/fl/sc/notif.sh youtube-dl: downloading video
-					yt-dlp "$string"
+					yt-dlp -q "$string"
 					#~/fl/sc/notif.sh youtube-dl: downloaded video
 				;;
 				"3) mpv")
@@ -36,23 +36,26 @@ if [ -n "$(echo "$string" | grep "^[^~/.].*@*.*\.[A-Za-z]\+.*")" ]; then
 					mpv "$string"
 				;;
 				"4) bookmark")
+					cd ~/.local/bin/res/bm
 					name="$(echo -e "\c" | dmenu -p "save as:")"
-					echo "$name" >> ~/.local/bin/res/bm.txt
-					echo "$string" >> ~/.local/bin/res/bm.txt
+					echo -e "$name\n$string\n" >> "$(ls | dmenu -p "category:")"
 				;;
 			esac
 	else
-			menu="1) bookmark\n2) goto"
+			menu="1) bookmark\n2) goto\n3) scihub"
 			select="$(printf "$menu" | dmenu -p "URL:")"
 			case $select in
 				"1) bookmark")
 					cd ~/.local/bin/res/bm
 					name="$(echo -e "\c" | dmenu -p "save as:")"
-					echo -e "$name\t$string" >> "$(ls | dmenu -p "category:")"
+					echo -e "$name\n$string\n" >> "$(ls | dmenu -p "category:")"
 				;;
 				"2) goto")
 					cd $dldir
-					librewolf "$string"
+					firefox "$string"
+				;;
+				"3) scihub")
+					firefox "sci-hub.wf/$string"
 				;;
 			esac
 

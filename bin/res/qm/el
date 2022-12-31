@@ -12,7 +12,7 @@ pmv				~/.local/src/mgltools/MGLTools-1.5.7/bin/pmv
 megaproto		~/.local/src/mega/megaproto
 gaussian		MESA_GL_VERSION_OVERRIDE=4.5; export MESA_LOADER_DRIVER_OVERRIDE=i965; WINEARCH=win32 WINEPREFIX=/home/aldo/.wine/main32 wine ~/.wine/main32/drive_c/Program\ Files/g09w/gview.exe
 chemsep			WINEARCH=win32 WINEPREFIX=~/.wine/main wine ~/.wine/main/drive_c/Program\ Files/chemsep/ChemSepL8v27/bin/wincs.exe
-geogebra		~/src/GeoGebra-linux-x64/GeoGebra
-prosim			WINEARCH=win32 WINEPREFIX=~/.wine/main wine ~/.wine/main/drive_c/Program\ Files\ \(x86\)/ProSim\ Ternary\ Diagram/Ternaire.exe
+geogebra		~/.local/src/GeoGebra-linux-x64/GeoGebra
+prosim			WINEARCH=win32 WINEPREFIX=~/.wine/main wine ~/.wine/main/drive_c/Program\ Files/ProSim\ Ternary\ Diagram/Ternaire.exe
 rasmol			WINEARCH=win32 WINEPREFIX=/home/aldo/.wine/rasmol wine ~/.wine/rasmol/drive_c/Program\ Files/RasWin/raswin.exe
 thermosolver	WINEARCH=win32 WINEPREFIX=~/.wine/main wine ~/.wine/main/drive_c/Program\ Files/thermosolver/Thermo.exe	

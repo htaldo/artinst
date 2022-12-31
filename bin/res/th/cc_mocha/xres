@@ -1,0 +1,21 @@
+/foreground/s/#[[:xdigit:]]*/#cdd6f4/
+/background/s/#[[:xdigit:]]*/#1e1e2e/
+/cursorColor/s/#[[:xdigit:]]*/#cdd6f4/
+/color0/s/#[[:xdigit:]]*/#585b70/
+/color8/s/#[[:xdigit:]]*/#585b70/
+/color1[^0-9]/s/#[[:xdigit:]]*/#f38ba8/
+/color9/s/#[[:xdigit:]]*/#f38ba8/
+/color2/s/#[[:xdigit:]]*/#a6e3a1/
+/color10/s/#[[:xdigit:]]*/#a6e3a1/
+/color3/s/#[[:xdigit:]]*/#f9e2af/
+/color11/s/#[[:xdigit:]]*/#f9e2af/
+/color4/s/#[[:xdigit:]]*/#89b4fa/
+/color12/s/#[[:xdigit:]]*/#89b4fa/
+/color5/s/#[[:xdigit:]]*/#f5c2e7/
+/color13/s/#[[:xdigit:]]*/#f5c2e7/
+/color6/s/#[[:xdigit:]]*/#94e2d5/
+/color14/s/#[[:xdigit:]]*/#94e2d5/
+/color7/s/#[[:xdigit:]]*/#a6adc8/
+/color15/s/#[[:xdigit:]]*/#a6adc8/
+
+/URxvt\.font/s/.*/URxvt.font: xft:AlmaMono:regular:size=12/

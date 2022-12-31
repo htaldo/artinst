@@ -1,6 +1,7 @@
+0)close				exit
 1)shutdown			doas /sbin/poweroff
-2)lock				cmus-remote -u; betterlockscreen -l
+2)lock				cmus-remote -U; betterlockscreen -l &
 3)reboot			doas /sbin/reboot
 4)flush				sync; echo 3 | doas /usr/bin/tee /proc/sys/vm/drop_caches
-6)lock_nopause		betterlockscreen -l
+6)lock_nopause		betterlockscreen -l &
 9)suspend			echo deep | doas /usr/bin/tee /sys/power/mem_sleep; echo mem | doas /usr/bin/tee /sys/power/state

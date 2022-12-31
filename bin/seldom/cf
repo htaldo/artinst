@@ -1,0 +1,8 @@
+#!/bin/bash
+# cf - change fonts
+
+sed -i /.font/".*"/"URxvt.font: xft:CozetteVector:regular:size=12"/ ~/.Xresources
+cd ~/.local/src
+sed -i /\*fonts/s/".*"/"Alma Mono:size=10:antialias=true"/ dmenu-5.0/config.h
+sed -i /\*fonts/s/".*"/"Alma Mono:size=10:antialias=true"/ dwm-6.4/config.h
+sed -i /dmenufont\[\]/s/".*"/"Alma Mono:size=10:antialias=true"/ dwm-6.4/config.h

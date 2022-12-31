@@ -4,7 +4,7 @@
 #check if dep folder already exists; else create it (for the selected subject)
 
 select="$(ls ~/fl/ipn/7 | dmenu)"; [ -z "$select" ] && exit
-dep="2"
+dep="3"
 
 case $select in
 	"ice")

@@ -1,0 +1,6 @@
+#!/bin/bash
+#rh - run from history
+
+HISTFILE=~/.bash_history
+set -o history
+$(history | fzf | sed 's/^ \+[[:digit:]]\+ \+//')

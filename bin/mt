@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #mt - mount a device through dmenu
 #list formatting
@@ -33,7 +33,8 @@ if [ "$devsel" -a -n "$(printf "$devsel" | grep sd)" ]; then
 else
 	if [ "$devsel" -a -n "$(printf "$devsel" | grep '\(MTP\)')" ]; then 
 		dev=$(echo ${dev:0:1})
-		#simple-mtpfs --device $dev ~/cel && ~/fl/sc/notif.sh mt: mounted $dev || ~/fl/sc/notif.sh mt: could not mount "$dev"
+		simple-mtpfs --device $dev ~/cel 
+		 #&& ~/fl/sc/notif.sh mt: mounted $dev || ~/fl/sc/notif.sh mt: could not mount "$dev"
 	else
 		[ -n "$devsel" ] && fusermount -u $mountp
 		#&& ~/fl/sc/notif.sh mt: unmounted $dev

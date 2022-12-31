@@ -1,0 +1,7 @@
+/col_1/s/#[[:xdigit:]]*/#f9f5d7/
+/col_2/s/#[[:xdigit:]]*/#1d2021/
+/col_3/s/#[[:xdigit:]]*/#1d2021/
+/col_4/s/#[[:xdigit:]]*/#a89984/
+/col_5/s/#[[:xdigit:]]*/#1d2021/
+
+/borderpx/s/[[:digit:]]/0/

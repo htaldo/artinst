@@ -1,0 +1,9 @@
+/col_1/s/#[[:xdigit:]]*/#a5adcb/
+/col_2/s/#[[:xdigit:]]*/#24273a/
+/col_3/s/#[[:xdigit:]]*/#24273a/
+/col_4/s/#[[:xdigit:]]*/#8bd5ca/
+/col_5/s/#[[:xdigit:]]*/#24273a/
+
+/borderpx/s/[[:digit:]]/0/
+/\*fonts/s/".*"/"Alma Mono:size=10:antialias=true"/
+/dmenufont\[\]/s/".*"/"Alma Mono:size=10:antialias=true"/

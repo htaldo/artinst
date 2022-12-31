@@ -18,11 +18,11 @@ else
 	cd
 	query="$(echo -e "\c" | dmenu -p "find dir:")"
 
-	#type - at the beginning to search a specific directory
+	#type "- " at the beginning to search a specific directory
 	if [ -n "$(echo $query | grep ^-)" ]; then
-		newdir="$(echo $query | cut -c2-)"
+		newdir="$(echo $query | cut -c2- | sed 's/\//\\\//g')"
 	else 
-		raw="$(find fl pic vid -type d -print | grep "$query" | dmenu -l 10)"
+		raw="$(find fl pic vid -type d -print | fzf -f "$query" | dmenu -l 10)"
 		newdir="$(echo $raw | sed 's/\//\\\//g')" 
 	fi
 	case $select in

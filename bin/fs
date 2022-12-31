@@ -3,8 +3,10 @@
 #fs - find snippet
 dir=$1; pattern=$2
 cd $dir
-raw="$(grep -d skip -r "$pattern" $(find | grep '.py$') | fzf)"
+raw="$(find | sed 's/ /\\ /g' | grep -d skip -r "$pattern" | fzf)"
 [ -n "$raw" ] || exit
 file="$(cut -d : -f 1 <<< "$raw")"
 query="$(sed -e 's/[^:]\+://' -e 's/^[[:space:]]*//' <<< "$raw")"
-nvim -c "/$query" $file
+#give query the format (n)vim expects
+clean="$(sed 's/~\|\//\[&\]/g' <<< $query)"
+nvim -c /"$clean" $file

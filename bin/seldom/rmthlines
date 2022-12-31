@@ -1,0 +1,11 @@
+#!/bin/bash
+# delete all lines in bin/th/*/dwm and dmenu containing font
+
+for dir in *; do 
+	if [ -d $dir ]; then
+		cd $dir
+		sed -i '/font/d' dwm
+		sed -i '/font/d' dmenu
+		cd ..
+	fi
+done

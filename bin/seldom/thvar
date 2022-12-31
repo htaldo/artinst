@@ -1,0 +1,46 @@
+#!/bin/bash
+#thvar - apply a variation of the same theme
+
+throot=~/.local/bin/res/th
+oldxres=$throot/$1/xres
+newxres=$throot/xres
+
+files="$(find $throot/$1 -type f)"
+
+oldfg=$(sed -n "/foreground/s/.*\(#[[:xdigit:]]\{6\}\).*/\1/p" $oldxres)
+oldbg=$(sed -n "/background/s/.*\(#[[:xdigit:]]\{6\}\).*/\1/p" $oldxres)
+oldcursor=$(sed -n "/cursorColor/s/.*\(#[[:xdigit:]]\{6\}\).*/\1/p" $oldxres)
+newfg=$(sed -n "/foreground/s/.*\(#[[:xdigit:]]\{6\}\).*/\1/p" $newxres)
+newbg=$(sed -n "/background/s/.*\(#[[:xdigit:]]\{6\}\).*/\1/p" $newxres)
+newcursor=$(sed -n "/cursorColor/s/.*\(#[[:xdigit:]]\{6\}\).*/\1/p" $newxres)
+
+i=0
+while [ $i -le 15 ]; do
+	#look for color$i in the old xresources and assign to pattern
+	pattern=$(sed -n "/color$i[^0-9]/s/.*\(#[[:xdigit:]]\{6\}\).*/\1/p" $oldxres)
+	#look for color$i in the new xresources and assign to subs
+	subs=$(sed -n "/color$i[^0-9]/s/.*\(#[[:xdigit:]]\{6\}\).*/\1/p" $newxres)
+	for f in $files; do
+		if [ "$f" = "$oldxres" ]; then
+			sed -i "/color/s/$pattern/$subs/g" $f
+		else
+			sed -i "s/$pattern/$subs/g" $f
+		fi
+	done
+	((i++))
+done
+
+
+for f in $files; do
+	if [ "$f" = "$oldxres" ]; then
+		sed -i -e "/foreground/s/$oldfg/$newfg/g" \
+			   -e "/background/s/$oldbg/$newbg/g" \
+			   -e "/cursor/s/$oldcursor/$newcursor/g" \
+			   -e "/black/q" $f
+	else
+		sed -i "s/$oldfg/$newfg/g" $f
+		sed -i "s/$oldbg/$newbg/g" $f
+	fi
+done
+
+echo done!

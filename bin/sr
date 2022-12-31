@@ -11,6 +11,6 @@ else
 	cd $srdir
 	name="$(sd)"
 	#(~/fl/sc/sb.sh "$(echo o rec)")&
-	ffmpeg -f x11grab -framerate 25 -s 1600x900 -i :0.0 -f pulse -ac 2 -i 0 \
+	ffmpeg -f x11grab -framerate 25 -s 1366x768 -i :0.0 -f pulse -ac 2 -i 0 \
 		"$name.mkv" 
 fi

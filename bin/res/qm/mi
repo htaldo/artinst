@@ -1,0 +1,2 @@
+1_dug		du -h | grep '[[:digit:]]G' ; we
+2_sn		urxvt -e iwctl station wlan0 scan; iwctl station wlan0 get-networks

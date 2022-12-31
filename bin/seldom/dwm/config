@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sed -i 's/gray1/1/g' config.h
+sed -i 's/gray2/2/g' config.h
+sed -i 's/gray3/3/g' config.h
+sed -i 's/gray4/4/g' config.h
+sed -i 's/cyan/5/g' config.h

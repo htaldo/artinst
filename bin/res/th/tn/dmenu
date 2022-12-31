@@ -5,4 +5,3 @@
 /SchemeOut/s/#[[:xdigit:]]*/#003061/
 /SchemeOut/s/#[[:xdigit:]]*/#f7f7f7/2
 
-/\*fonts/s/".*"/"Alma Mono:size=10:antialias=true"/
