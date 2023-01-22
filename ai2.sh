@@ -13,12 +13,12 @@ doas pacman --noconfirm -Rsn sudo
 #graphics (for virtualbox)
 #doas pacman --noconfirm -S xf86-video-fbdev
 #graphics (for intel)
-doas pacman --noconfirm -S xf86-video-intel mesa lib32-mesa vulkan-intel
+doas pacman --noconfirm -S xf86-video-intel mesa lib32-mesa lib32-vulkan-intel
 
 doas pacman --noconfirm -S xorg xorg-server xorg-xinit xorg-xrandr xorg-xsetroot xorg-xhost file acpi patch xdg-utils 
 doas pacman --noconfirm -S pulseaudio pulseaudio-alsa alsa-utils alsa-lib pamixer 
 doas pacman --noconfirm -S xclip maim zathura mpv zathura-djvu zathura-pdf-mupdf newsboat calcurse neofetch tmux cmus picom rxvt-unicode
-doas pacman --noconfirm -S gcc libx11 libxinerama libxft ncurses dbus adwaita-icon-theme ttf-dejavu gtk3 light udisks2 dbus feh
+doas pacman --noconfirm -S gcc libx11 libxinerama libxft ncurses dbus noto-fonts-cjk adwaita-icon-theme ttf-dejavu gtk3 light udisks2 dbus feh
 doas pacman --noconfirm -S mtpfs jmtpfs gvfs-mtp gvfs-gphoto2
 
 #scripts
