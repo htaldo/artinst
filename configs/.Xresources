@@ -39,6 +39,7 @@ urxvt.color15:	#ebdbb2
 URxvt.scrollBar: false
 
 !fonts
+!URxvt.boldFont: xft:CozetteVector:regular:size=9:antialias=true
 URxvt.font: xft:AlmaMono:regular:size=12
 
 !Extensions:

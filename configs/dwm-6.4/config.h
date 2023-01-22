@@ -46,15 +46,15 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Alma Mono:size=10:antialias=true" };
 static const char dmenufont[]       = "Alma Mono:size=10:antialias=true";
-static const char col_gray1[]       = "#101010";
-static const char col_gray2[]       = "#101010";
-static const char col_gray3[]       = "#c0c0c0";
-static const char col_gray4[]       = "#c0c0c0";
-static const char col_cyan[]        = "#101010";
+static const char col_1[]       = "#ebdbb2";
+static const char col_2[]       = "#282828";
+static const char col_3[]       = "#282828";
+static const char col_4[]       = "#a89984";
+static const char col_5[]        = "#282828";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeNorm] = { col_1, col_2, col_5 },
+	[SchemeSel]  = { col_1, col_2,  col_5  },
 };
 
 /* tagging */
@@ -96,7 +96,7 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_2, "-nf", col_1, "-sb", col_4, "-sf", col_3, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
 
 static const Key keys[] = {

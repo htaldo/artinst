@@ -3,4 +3,4 @@
 #64 - launch nin64 roms
 n64DIR=~/fl/gam/epilepsia
 select="$(find $n64DIR -type f | dmenu -i -l 10)" || exit
-mupen64plus --resolution 1024x600 --gfx mupen64plus-video-rice "$select"
+mupen64plus --resolution 1366x768 --gfx mupen64plus-video-rice "$select"
