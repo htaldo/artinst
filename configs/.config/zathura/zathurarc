@@ -1,0 +1,17 @@
+set font "AlmaMono normal 10"
+set recolor true
+set recolor-darkcolor "#d8dee9"
+set recolor-lightcolor "#2e3440"
+set default-bg "#2e3440"
+set inputbar-fg "#d8dee9" 
+set inputbar-bg "#2e3440"
+set statusbar-fg "#d8dee9"
+set statusbar-bg "#2e3440"
+set index-fg "#d8dee9"
+set index-bg "#2e3440"
+set index-active-fg "#2e3440"
+set index-active-bg "#8fbcbb"
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 1
+set selection-clipboard clipboard

@@ -1,0 +1,5 @@
+vim.cmd('set shada="NONE"')
+require("aldo")
+require("keybinds")
+require("settings")
+require("colors")

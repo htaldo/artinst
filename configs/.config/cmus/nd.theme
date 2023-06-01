@@ -1,0 +1,31 @@
+### Window
+set color_separator=blue
+set color_win_bg=default
+set color_win_fg=default
+set color_win_cur=lightyellow
+set color_win_cur_sel_bg=blue
+set color_win_cur_sel_fg=lightyellow
+### Song Timeline
+set color_statusline_bg=black
+set color_statusline_fg=lightcyan
+### Command Line
+set color_cmdline_bg=black
+set color_cmdline_fg=default
+### Errors and Info
+set color_error=lightred
+set color_info=lightyellow
+### Menu Title
+set color_win_title_bg=blue
+set color_win_title_fg=white
+### Inactive Menu Items
+set color_win_inactive_cur_sel_bg=gray
+set color_win_inactive_cur_sel_fg=lightyellow
+set color_win_inactive_sel_bg=gray
+set color_win_inactive_sel_fg=black
+### Active/Selected Menu Items
+set color_win_sel_bg=blue
+set color_win_sel_fg=white
+set color_win_dir=lightblue
+### Artist, Album and Song 
+set color_titleline_bg=blue
+set color_titleline_fg=white

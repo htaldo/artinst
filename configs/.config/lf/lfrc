@@ -1,0 +1,20 @@
+set relativenumber
+
+cmd open-with %"$@" "$fx"
+map o push :open-with<space>
+
+cmd open ${{
+	case $(file --mime-type "$f" -bL) in
+		text/*)
+		[ -n "$(printf "$f" | grep csv)" ] && sc-im "$f" || nvim "$f"
+		;;
+		video/*) mpv "$f";;
+		application/pdf) zathura "$f" &;;
+		application/epub+zip) zathura "$f" &;;
+		image/vnd.djvu) zathura "$f" &;;
+		image/svg+xml) inkscape "$f" &;;
+		image/*) feh "$f" &;;
+		chemical/*) nvim "$f";;
+		*) xdg-open "$f" &;; 
+	esac
+}}
