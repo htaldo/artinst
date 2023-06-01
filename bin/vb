@@ -9,9 +9,9 @@ case "$1" in
 		pamixer -d 2
 	;;
 	"-l")
-		light -A 1
+		[ "$(light -G)" = "0" ] && light -S 0.8 || light -T 1.25
 	;;
 	"-h")
-		light -U 1
+		light -T 0.8
 	;;
 esac

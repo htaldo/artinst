@@ -25,6 +25,7 @@ if [ -n "$query" ]; then
 			;;
 			video/*) mpv "$f" &;;
 			application/pdf) zathura "$f" &;;
+			application/epub+zip) zathura "$f" &;;
 			image/vnd.djvu) zathura "$f" &;;
 			image/svg+xml) inkscape "$f" &;;
 			image/*) feh "$f" &;;

@@ -19,8 +19,9 @@ case $1 in
 		urxvt -e newsboat
 	;;
 	"-s")
-		dldir=~/fl/dl
-		cd $dldir; surf duckduckgo.com
+		steam
+		#dldir=~/fl/dl
+		#cd $dldir; surf duckduckgo.com
 	;;
 	"-t")
 		teams --disable-seccomp-filter-sandbox
