@@ -7,9 +7,9 @@ static const char *fonts[] = {"Alma Mono:size=10:antialias=true"};
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#ebdbb2", "#282828" },
-	[SchemeSel] = { "#282828", "#a89984" },
-	[SchemeOut] = { "#282828", "#a89984" },
+	[SchemeNorm] = { "#d8dee9", "#2e3440" },
+	[SchemeSel] = { "#2e3440", "#8fbcbb" },
+	[SchemeOut] = { "#2e3440", "#8fbcbb" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
