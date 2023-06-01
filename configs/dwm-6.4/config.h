@@ -30,7 +30,7 @@ static const char *ff[] = { "/home/aldo/.local/bin/ff", "", NULL};
 static const char *fd[] = { "/home/aldo/.local/bin/fd", "", NULL};
 static const char *fr[] = { "/home/aldo/.local/bin/fr", "", NULL};
 static const char *bm[] = { "/home/aldo/.local/bin/bm", "", NULL};
-static const char *surf[] = { "/home/aldo/.local/bin/super", "-s", NULL};
+static const char *steam[] = { "/home/aldo/.local/bin/super", "-s", NULL};
 static const char *teams[] = { "/home/aldo/.local/bin/super", "-t", NULL};
 static const char *vim[] = { "/home/aldo/.local/bin/super", "-v", NULL};
 static const char *ytfzf[] = { "/home/aldo/.local/bin/super", "-y", NULL};
@@ -43,18 +43,18 @@ static const char *dv[] = { "/home/aldo/.local/bin/vb", "-k", NULL};
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 1;        /* 0 means bottom bar */
+static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Alma Mono:size=10:antialias=true" };
 static const char dmenufont[]       = "Alma Mono:size=10:antialias=true";
-static const char col_gray1[]       = "#282828";
-static const char col_gray2[]       = "#282828";
-static const char col_gray3[]       = "#ebdbb2";
-static const char col_gray4[]       = "#ebdbb2";
-static const char col_cyan[]        = "#282828";
+static const char col_1[]       = "#d8dee9";
+static const char col_2[]       = "#2e3440";
+static const char col_3[]       = "#2e3440";
+static const char col_4[]       = "#8fbcbb";
+static const char col_5[]        = "#8fbcbb";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeNorm] = { col_1, col_2, col_5 },
+	[SchemeSel]  = { col_1, col_2,  col_5  },
 };
 
 /* tagging */
@@ -96,7 +96,7 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_2, "-nf", col_1, "-sb", col_4, "-sf", col_3, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
 
 static const Key keys[] = {
@@ -132,7 +132,7 @@ static const Key keys[] = {
     { MOD2KEY,                      XK_l,      spawn,          {.v = lo } },
     { MOD2KEY,                      XK_p,      spawn,          {.v = elaunch } },
     { MOD2KEY,                      XK_g,      spawn,          {.v = n64 } },
-    { MOD2KEY,                      XK_s,      spawn,          {.v = surf } },
+    { MOD2KEY,                      XK_s,      spawn,          {.v = steam } },
     { MOD2KEY,                      XK_t,      spawn,          {.v = teams } },
     { MOD2KEY,                      XK_v,      spawn,          {.v = vim } },
     { MOD2KEY,                      XK_y,      spawn,          {.v = ytfzf } },
