@@ -60,9 +60,15 @@ mount $device"1" /boot/efi
 grub-install $device --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub_uefi --recheck --removable
 grub-mkconfig -o /boot/grub/grub.cfg
 
-passwd
+until passwd
+do
+    echo "Sorry. Try again"
+done
 useradd -m $user
-passwd $user
+until passwd $user
+do
+    echo "Sorry. Try again"
+done
 usermod -aG wheel,audio,video,input,power,optical,storage,lp,scanner,dbus,uucp $user
 
 #TODO: ver si se puede instalar todo solo con wifi

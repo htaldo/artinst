@@ -5,3 +5,7 @@
 /inputbar-bg/s/#[[:xdigit:]]*/#2e3440/
 /statusbar-fg/s/#[[:xdigit:]]*/#d8dee9/
 /statusbar-bg/s/#[[:xdigit:]]*/#2e3440/
+/index-fg/s/#[[:xdigit:]]*/#d8dee9/
+/index-bg/s/#[[:xdigit:]]*/#2e3440/
+/index-active-fg/s/#[[:xdigit:]]*/#2e3440/
+/index-active-bg/s/#[[:xdigit:]]*/#8fbcbb/

@@ -8,12 +8,12 @@ cmd open ${{
 		text/*)
 		[ -n "$(printf "$f" | grep csv)" ] && sc-im "$f" || nvim "$f"
 		;;
-		video/*) mpv "$f";;
-		application/pdf) zathura "$f" &;;
-		application/epub+zip) zathura "$f" &;;
-		image/vnd.djvu) zathura "$f" &;;
-		image/svg+xml) inkscape "$f" &;;
-		image/*) feh "$f" &;;
+		video/*) nohup mpv "$f" >/dev/null 2>&1 &;;
+		application/pdf) nohup zathura "$f" >/dev/null 2>&1 &;;
+		application/epub+zip) nohup zathura "$f" >/dev/null 2>&1 &;;
+		image/vnd.djvu) nohup zathura "$f" >/dev/null 2>&1 &;;
+		image/svg+xml) nohup inkscape "$f" >/dev/null 2>&1 &;;
+		image/*) nohup feh "$f" >/dev/null 2>&1 &;;
 		chemical/*) nvim "$f";;
 		*) xdg-open "$f" &;; 
 	esac

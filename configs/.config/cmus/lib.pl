@@ -50,6 +50,7 @@
 /home/aldo/mus/All My Loving.mp3
 /home/aldo/mus/All Night Long.mp3
 /home/aldo/mus/All Night.mp3
+/home/aldo/mus/All The Small Things.mp3
 /home/aldo/mus/All Together Now.mp3
 /home/aldo/mus/All You Need Is Love.mp3
 /home/aldo/mus/Alma Mía.mp3
@@ -375,6 +376,7 @@
 /home/aldo/mus/Everything She Wants.mp3
 /home/aldo/mus/Evil Ways.mp3
 /home/aldo/mus/Eye in the Sky.mp3
+/home/aldo/mus/Face Down in a Plate of Nachos.mp3
 /home/aldo/mus/Faded.mp3
 /home/aldo/mus/Faith.mp3
 /home/aldo/mus/Fallen Down.mp3
@@ -792,7 +794,9 @@
 /home/aldo/mus/Melina.mp3
 /home/aldo/mus/Mellow Dream.mp3
 /home/aldo/mus/Meng.mp3
+/home/aldo/mus/Menina Mulher da Pele Preta.mp3
 /home/aldo/mus/Meu Lugar.mp3
+/home/aldo/mus/Mexican Seafood.mp3
 /home/aldo/mus/Michelle.mp3
 /home/aldo/mus/Middle.mp3
 /home/aldo/mus/Midnight, The Stars and You.mp3
@@ -917,6 +921,7 @@
 /home/aldo/mus/Outra Vez.mp3
 /home/aldo/mus/Oye Como Va.mp3
 /home/aldo/mus/Paganini in gypsy jazz style.mp3
+/home/aldo/mus/Pain.mp3
 /home/aldo/mus/Paint It, Black.mp3
 /home/aldo/mus/Pais Tropical.mp3
 /home/aldo/mus/Panic.mp3

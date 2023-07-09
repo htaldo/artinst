@@ -1,8 +1,26 @@
 #!/bin/bash
-# cf - change fonts
 
-sed -i /.font/".*"/"URxvt.font: xft:CozetteVector:regular:size=12"/ ~/.Xresources
-cd ~/.local/src
-sed -i /\*fonts/s/".*"/"Alma Mono:size=10:antialias=true"/ dmenu-5.0/config.h
-sed -i /\*fonts/s/".*"/"Alma Mono:size=10:antialias=true"/ dwm-6.4/config.h
-sed -i /dmenufont\[\]/s/".*"/"Alma Mono:size=10:antialias=true"/ dwm-6.4/config.h
+# cf - change fonts
+homdir='/home/aldo'
+srcdir='/home/aldo/.local/src'
+
+case "$1" in
+	"am")
+		#sed -i /.font/s/.*/URxvt.font:\ xft:CozetteVector:regular:size=9:antialias=true/ ~/.Xresources
+		sed -i /URxvt\.font/s/.*/URxvt.font:\ xft:AlmaMono:regular:size=12/ $homdir/.Xresources
+		cd $homdir/.local/src
+		sed -i /\*fonts/s/\".*\"/\"Alma\ Mono:size=10:antialias=true\"/ $srcdir/dmenu-5.0/config.h
+		sed -i /\*fonts/s/\".*\"/\"Alma\ Mono:size=10:antialias=true\"/ $srcdir/dwm-6.4/config.h
+		sed -i /dmenufont\[[]]/s/\".*\"/\"Alma\ Mono:size=10:antialias=true\"/ $srcdir/dwm-6.4/config.h
+	;;	
+	"cp")
+		sed -i /URxvt\.font/s/.*/URxvt.font:\ xft:CourierPrime:bold:size=14/ $homdir/.Xresources
+		cd $homdir/.local/src
+		sed -i /\*fonts/s/\".*\"/\"Courier\ Prime:bold:size=14:antialias=true\"/ $srcdir/dmenu-5.0/config.h
+		sed -i /\*fonts/s/\".*\"/\"Courier\ Prime:bold:size=14:antialias=true\"/ $srcdir/dwm-6.4/config.h
+		sed -i /dmenufont\[[]]/s/\".*\"/\"Courier\ Prime:bold:size=14:antialias=true\"/ $srcdir/dwm-6.4/config.h
+	;;	
+esac
+
+cd $homdir/.local/src/dwm-6.4; make clean install
+cd $homdir/.local/src/dmenu-5.0; make clean install

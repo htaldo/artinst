@@ -1,3 +1,4 @@
+rstudio			/usr/lib/rstudio/rstudio
 avogadro2		WINEARCH=win64 WINEPREFIX=/home/aldo/.wine/main64 wine /home/aldo/.wine/main64/drive_c/Program\ Files/avogadro2/bin/avogadro2.exe
 avogadro		WINEARCH=win32 WINEPREFIX=/home/aldo/.wine/main32 wine ~/.wine/main32/drive_c/Program\ Files/Avogadro/bin/avogadro.exe
 adt				~/.local/src/mgltools/MGLTools-1.5.7/bin/adt

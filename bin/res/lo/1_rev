@@ -1,0 +1,5 @@
+#!/bin/bash
+
+urxvt -e vim /home/aldo/fl/etc/c2/ds/4/a &
+urxvt -e vim /home/aldo/fl/etc/c2/ds/4/r &
+zathura ~/fl/lib/com/Languages/c2/Daniel\ Smith\ -\ English\ Grammar\ Exercises\ with\ answers\ Part\ 4_\ Your\ quest\ towards\ C2\ \(2020\).epub &

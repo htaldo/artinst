@@ -43,14 +43,14 @@ static const char *dv[] = { "/home/aldo/.local/bin/vb", "-k", NULL};
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Alma Mono:size=10:antialias=true" };
-static const char dmenufont[]       = "Alma Mono:size=10:antialias=true";
-static const char col_1[]       = "#d8dee9";
-static const char col_2[]       = "#2e3440";
-static const char col_3[]       = "#2e3440";
-static const char col_4[]       = "#8fbcbb";
-static const char col_5[]        = "#8fbcbb";
+static const int topbar             = 1;        /* 0 means bottom bar */
+static const char *fonts[]          = { "Courier Prime:bold:size=14:antialias=true" };
+static const char dmenufont[]       = "Courier Prime:bold:size=14:antialias=true";
+static const char col_1[]       = "#83502d";
+static const char col_2[]       = "#ffeace";
+static const char col_3[]       = "#ffeace";
+static const char col_4[]       = "#83502d";
+static const char col_5[]        = "#ffeace";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_1, col_2, col_5 },

@@ -1,6 +1,6 @@
-/col_1/s/#[[:xdigit:]]*/#fff6b0/
+/col_1/s/#[[:xdigit:]]*/#633408/
 /col_2/s/#[[:xdigit:]]*/#fff6b0/
-/col_3/s/#[[:xdigit:]]*/#633408/
+/col_3/s/#[[:xdigit:]]*/#fff6b0/
 /col_4/s/#[[:xdigit:]]*/#633408/
 /col_5/s/#[[:xdigit:]]*/#fff6b0/
 

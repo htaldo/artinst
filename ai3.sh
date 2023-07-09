@@ -1,7 +1,9 @@
 #!/bin/bash
 
 echo "STAGE 3: EXTRA"
-echo 1 | doas pacman --noconfirm -S rust cargo python3 go fzf inkscape libreoffice krita blender bat 
+echo 1 | doas pacman --noconfirm -S rust cargo python3 go
+echo 1 | doas pacman --noconfirm -S fzf bat lf
+echo 1 | doas pacman --noconfirm -S neovim pamixer
 
 #paru
 cd ~/.local/src
@@ -11,10 +13,8 @@ makepkg -si
 doas sed -i '/\[bin\]/s/^#//' /etc/paru.conf
 doas sed -i '/Sudo = doas/s/^#//' /etc/paru.conf
 
-paru nvim
-paru nvim-packer-git
-paru lf 
-paru librewolf-bin 
+#paru nvim-packer-git
+#paru librewolf-bin 
 paru urxvt-resize-font-git
 paru simple-mtpfs 
 paru betterlockscreen 
@@ -24,4 +24,6 @@ paru ytfzf
 paru thokr-git 
 paru sc-im
 
-curl -sS https://starship.rs/install.sh | doas sh
+#curl -sS https://starship.rs/install.sh | doas sh
+
+echo 1 | doas pacman --noconfirm -S inkscape libreoffice

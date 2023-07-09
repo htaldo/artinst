@@ -21,6 +21,6 @@
 /PreProc/s/ctermfg=[[:digit:]]\+/ctermfg=2/
 /PreProc/s/fg=[[:alpha:]]\+/fg=Green/
 /Function/s/ctermfg=[[:digit:]]\+/ctermfg=11/
-/Function/s/fg=[[:alpha:]]\+/fg=LightYellow/
+/Function/s/fg=[[:alpha:]]\+/fg=Yellow/
 /LineNr/s/ctermfg=[[:digit:]]\+/ctermfg=11/
-/LineNr/s/fg=[[:alpha:]]\+/fg=LightYellow/
+/LineNr/s/fg=[[:alpha:]]\+/fg=Yellow/

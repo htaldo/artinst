@@ -5,11 +5,11 @@ echo "STAGE 2: POST-INSTALL"
 doas sv up dhcpcd
 doas sv up iwd
 
-#network=$1
-#iwctl station wlan0 scan
-#iwctl station wlan0 connect "$network"
+network=$1
+iwctl station wlan0 scan
+iwctl station wlan0 connect "$network"
 
-doas pacman --noconfirm -Rsn sudo
+#doas pacman --noconfirm -Rsn sudo
 #graphics (for virtualbox)
 #doas pacman --noconfirm -S xf86-video-fbdev
 #graphics (for intel)
@@ -31,7 +31,7 @@ mkdir ~/.local/src
 cd ~/.local/src
 #install dwm
 wget https://dl.suckless.org/dwm/dwm-6.4.tar.gz
-tar xzvf dwm-6.2.tar.gz
+tar xzvf dwm-6.4.tar.gz
 cd dwm-6.4
 cp ~/artinst/configs/dwm-6.4/config.h ~/.local/src/dwm-6.4/config.h
 doas make clean install
@@ -63,7 +63,7 @@ cp ~/artinst/configs/.bashrc ~/.bashrc
 cp ~/artinst/configs/.bash_profile ~/.bash_profile
 cp ~/artinst/configs/.xinitrc ~/.xinitrc
 cp ~/artinst/configs/.Xresources ~/.Xresources
-cp ~/artinst/configs/.vimrc ~/.vimrc
-cp -r ~/artinst/configs/.config ~/.config
+#cp ~/artinst/configs/.vimrc ~/.vimrc
+cp -r ~/artinst/configs/.config ~/
 
 doas reboot
