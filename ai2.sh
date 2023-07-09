@@ -23,7 +23,7 @@ doas pacman --noconfirm -S mtpfs jmtpfs gvfs-mtp gvfs-gphoto2
 
 #scripts
 mkdir ~/.local
-cp -r ~/artinst/bin ~/.local/bin
+cp -r ~/artinst/bin ~/.local/
 cd ~/.local/bin
 doas chmod -R +x *.sh
 
