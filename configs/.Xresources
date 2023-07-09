@@ -1,0 +1,50 @@
+!special
+urxvt.foreground: #83502d
+urxvt.background: #ffeace
+urxvt.cursorColor:#83502d
+
+!black
+urxvt.color0:	#2c1403
+urxvt.color8:	#2c1403
+
+!red
+urxvt.color1:	#c8504b
+urxvt.color9:	#c8504b
+
+!green
+urxvt.color2:	#84913d
+urxvt.color10:	#84913d
+
+!yellow
+urxvt.color3:	#e0905a
+urxvt.color11:	#e0905a
+
+!blue
+urxvt.color4:	#748fa4
+urxvt.color12:	#748fa4
+
+!magenta
+urxvt.color5:	#8b6688
+urxvt.color13:	#8b6688
+
+!cyan
+urxvt.color6:	#69ab90
+urxvt.color14:	#69ab90
+
+!white
+urxvt.color7:	#deb999
+urxvt.color15:	#83502d
+
+!scrollbar
+URxvt.scrollBar: false
+
+!fonts
+!URxvt.boldFont: xft:CozetteVector:regular:size=9:antialias=true
+URxvt.font: xft:CourierPrime:bold:size=14
+
+!Extensions:
+URxvt.perl-ext-common: default,resize-font
+
+!resize-font
+URxvt.resize-font.smaller:	C-j
+URxvt.resize-font.bigger:	C-k
