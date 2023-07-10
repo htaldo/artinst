@@ -7,13 +7,19 @@ doas sv up iwd
 
 network=$1
 iwctl station wlan0 scan
-iwctl station wlan0 connect "$network"
+until iwctl station wlan0 connect "$network"
+do
+	echo "Sorry. Try again"
+done
 
-#doas pacman --noconfirm -Rsn sudo
+doas pacman --noconfirm -Rsn sudo
 #graphics (for virtualbox)
 #doas pacman --noconfirm -S xf86-video-fbdev
 #graphics (for intel)
-doas pacman --noconfirm -S xf86-video-intel mesa lib32-mesa lib32-vulkan-intel
+doas pacman --noconfirm -S mesa lib32-mesa vulkan-intel lib32-vulkan-intel
+#doas pacman --noconfirm -S xf86-video-intel
+#graphics (radeon)
+#doas pacman --noconfirm -S xf86-video-ati vulkan-radeon amdvlk
 
 doas pacman --noconfirm -S xorg xorg-server xorg-xinit xorg-xrandr xorg-xsetroot xorg-xhost file acpi patch xdg-utils 
 doas pacman --noconfirm -S pulseaudio pulseaudio-alsa alsa-utils alsa-lib pamixer 
