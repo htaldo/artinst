@@ -1,14 +1,21 @@
 #!/bin/bash
 
 echo "STAGE 3: EXTRA"
-echo 1 | doas pacman --noconfirm -S rust cargo python3 go
-echo 1 | doas pacman --noconfirm -S fzf bat lf
-echo 1 | doas pacman --noconfirm -S neovim pamixer
+#This can't be run as superuser - because makepkg
+echo 1 | doas pacman --noconfirm -S rust cargo go
+cargo install fcp
+echo 1 | doas pacman --noconfirm -S fzf lf firefox
+echo 1 | doas pacman --noconfirm -S neovim pamixer python3 pavucontrol
 
 #paru
 cd ~/.local/src
 git clone https://aur.archlinux.org/paru.git
 cd paru
+#this lets paru build without using sudo
+doas sed -i '/PACMAN_AUTH/{
+	s/^#//
+	s/()/(doas)/
+}' /etc/makepkg.conf | grep AUTH
 makepkg -si 
 doas sed -i '/\[bin\]/s/^#//' /etc/paru.conf
 doas sed -i '/Sudo = doas/s/^#//' /etc/paru.conf
@@ -24,6 +31,6 @@ paru ytfzf
 paru thokr-git 
 paru sc-im
 
-#curl -sS https://starship.rs/install.sh | doas sh
+curl -sS https://starship.rs/install.sh | doas sh
 
 echo 1 | doas pacman --noconfirm -S inkscape libreoffice
